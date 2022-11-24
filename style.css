@@ -1,0 +1,1896 @@
+*{
+	margin:0; 
+	padding:0;
+	list-style-type:none;
+	text-decoration:none;
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior:smooth;
+}
+body {
+  font-family: 'PT Sans', Segoe UI;
+}
+
+/* /////////If you need Style in Scrollbar(Fire Fox)/////// */
+ /* html,body{
+    scrollbar-color: linear-gradient(to top, #fff -20px, white, transparent 49px) !important;
+	scrollbar-width: thin;
+   } */
+   
+   
+      
+.container-md{
+	max-width:1170px!important;
+}
+.wrapper{
+	z-index:99;
+}
+
+
+
+
+::-moz-selection {
+background-color: #000;
+color: #fff;
+}
+
+::selection {
+background-color: #000;
+color: #fff;
+}
+
+
+
+/* /////////If you need Style in Scrollbar(Chrome)/////// */
+/* ::-webkit-scrollbar-thumb {
+    height: 8%;
+    border-radius: 5px;
+    background: linear-gradient(to top, #fff -20px, white, transparent 49px);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: #000;
+} */
+
+
+
+.active{
+	color: red;
+}
+/* ----------------------------------------------
+-------------------------------------------------
+------------------------------------------------- */
+/* ============================= *.Preloader
+======================================================= */
+#preloader{
+	width:100%;
+	height:100vh;
+	position:fixed;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	background: #000 url(assets/img/icon/original.gif) no-repeat center center;
+	background-size:50%;
+	z-index: 999999;
+}
+
+
+
+
+/* ===================== 1.Horizontzal Top Nav Menu 
+================================================= */
+#top_navbar{
+	
+	background:#000;
+	height:70px;
+}
+.top_navbar{
+	display:none;
+}
+/* ============= Sticky Nav
+===================================== */
+.fixed-nav{
+	display:block;
+	position:fixed!important;
+	top:0px!important;
+	right:0px!important;
+	left:0px!important;
+	z-index:999;
+}
+/* ============= Nav Logo
+===================================== */
+#top_navbar .navbar_menu{
+	display:flex;
+	justify-content:space-between;
+}
+#top_navbar .navbar_menu .navbar_logo{
+	padding: 4px 0;
+}
+#top_navbar .navbar_menu .navbar_logo a{
+	color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* ============ Nav Menu
+================================== */
+#top_navbar .navbar_menu nav{
+	text-transform:uppercase;
+	z-index: 1;
+}
+#top_navbar .navbar_menu nav ul{}
+#top_navbar .navbar_menu nav ul li{
+	display: inline-block;
+    padding: 20px 10px;
+    font-size: 12px;
+	position:relative;
+	transition: all .3s ease;
+}
+#top_navbar .navbar_menu nav ul li a, #top_navbar .navbar_menu nav ul li span{
+	color: #fff;
+	display:block;
+    font-weight: 900;
+	cursor: pointer;
+}
+#top_navbar .navbar_menu nav ul li a i, #top_navbar .navbar_menu nav ul li span i{
+	padding-right:4px;
+}
+#top_navbar .navbar_menu nav ul li span i.fa-angle-double-down{
+	padding-left: 5px;
+	font-size: 11px;
+	transition: all .2s linear;
+}
+#top_navbar .navbar_menu nav ul li:hover span i.fa-angle-double-down{
+	color:red;
+}
+/* ============= Drop Down
+========================================== */
+#top_navbar .navbar_menu nav ul li .dd-menu{
+	position: absolute;
+	width: 80px;
+	top: 50px;
+	display:none;
+	background: linear-gradient(45deg, black, transparent);
+	/* transition: all .1s ease; */
+}
+#top_navbar .navbar_menu nav ul li:hover .dd-menu{
+	
+}
+#top_navbar .navbar_menu nav ul li .dd-menu li{
+	display: block;
+	padding: 10px 10px;
+	transition: all .3s ease;
+}
+#top_navbar .navbar_menu nav ul li .dd-menu li a{
+	color:#FFF;
+}
+#top_navbar .navbar_menu nav ul li .dd-menu li a.active{
+	color:red;
+}
+#top_navbar .navbar_menu nav ul li .dd-menu li:hover{
+	padding-left:13px
+}
+/* ============ 1.1.Horizontzal Nav Reponsive Toggle Icon
+============================================================ */
+#top_navbar .navbar_menu .menu-toggle{
+	display:none;
+}
+#top_navbar .navbar_menu .menu-toggle span{
+	background: #fff;
+}
+.menu_p{
+	background: #e9e9e9;
+	position: absolute;
+	top:70px;
+	left: -85px;
+	width: 30%;
+	min-height:250px;
+	overflow-x: auto;
+}
+/* ================ 2.Home
+=========================================== */
+#home{
+	display: flex;
+    position: relative;
+    height: 100vh;
+	overflow:hidden;
+}
+/* ============== 2.1.Home Sidebar
+============================================== */
+
+#home .left_sidebar{
+	width: 64px;
+    background: black;
+    height: 100%;
+	display:flex;
+	transition: all .5s linear;
+	z-index:9;
+	
+}
+/* 2.1.Home Sidebar(index-1) */
+#home .left_sidebar1{
+	background: #000000d1;
+}
+#home .left_sidebar .open_sidebar{
+	width:251px;
+	height:100%;
+	overflow-y:auto;
+	scrollbar-width: none; /* (for FireFox) */
+	display: none;
+	transition: all .5s linear;
+}
+
+
+
+/* ------------------------------------------- */
+/**/	.open_sidebar::-webkit-scrollbar-thumb {}
+/**/	.open_sidebar::-webkit-scrollbar {
+/**/		width: 0px;
+/**/	}
+/* ------------------------------------------- */
+
+
+/* when Class 'collapse'add in home */
+#home.collapse .left_sidebar{
+	width: 315px;
+}
+#home.collapse .left_sidebar .open_sidebar{
+	display: block;
+}
+
+/* ============= 2.1.1.Website Logo in Side Bar
+============================================== */
+#home .left_sidebar .open_sidebar .sidebar_header{
+	width: 100%;
+	/* height: 120px; */
+    /* padding: 15px 0; */
+	padding-left: 40px;
+	padding-top: 23px;
+    padding-bottom: 31px;
+    border-bottom: 1px solid #8683834f;
+}
+#home .left_sidebar .open_sidebar .sidebar_header .logo_circle{
+	/* position: relative;
+    top: 23px; */
+	text-align: left;
+	padding-bottom: 31px;
+}
+#home .left_sidebar .open_sidebar .logo_circle i:nth-child(1){
+	color: #1e2a2fb5;
+	padding-right: 5px;
+}
+#home .left_sidebar .open_sidebar .logo_circle i:nth-child(2){
+	color: #2b3d46e0;
+    padding-right: 5px
+}
+#home .left_sidebar .open_sidebar .logo_circle i:nth-child(3){
+	color: #496673d1;
+}
+
+#home .left_sidebar .open_sidebar .sidebar_header a{
+	color: white;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 600;
+	
+}
+#home .left_sidebar .open_sidebar .logo_circle .circle.circle1{
+	animation: color 1s infinite;
+	animation-delay:.3s;
+}
+#home .left_sidebar .open_sidebar .logo_circle .circle.circle2{
+	animation: color 1s infinite;
+	animation-delay:.6s;
+}
+#home .left_sidebar .open_sidebar .logo_circle .circle.circle3{
+	animation: color 1s infinite;
+	animation-delay:.8s;
+}
+@keyframes color{
+	0%{
+		color: #1e2a2fb5;
+	}
+	50%{
+		color: #496673d1;
+	}
+	100%{
+		color: #1e2a2fb5;
+	}
+}
+
+
+
+/* ======================== 2.1.2.Side Bar Menu
+===================================================*/
+#home .left_sidebar .open_sidebar nav{
+	width: 100%;
+    height: auto;
+    padding-left: 40px;
+	padding-top: 31px;
+	padding-bottom: 50px;
+}
+#home .left_sidebar .open_sidebar nav ul{
+	list-style-type: none;
+
+}
+#home .left_sidebar .open_sidebar nav ul li{
+	padding: 13px 0;
+
+}
+#home .left_sidebar .open_sidebar nav > ul > li:hover > a{
+	color:red;
+}
+#home .left_sidebar .open_sidebar nav ul li a{
+	text-decoration: none;
+    color: whitesmoke;
+    font-size: 15px;
+    display: block;
+    font-weight: 900;
+	text-transform:uppercase;
+	transition: all .5s linear;
+}
+#home .left_sidebar .open_sidebar nav ul li a i{
+	padding-right:5px;
+	width: 27px;
+    font-size: 17px;
+}
+#home .left_sidebar .open_sidebar nav ul li a i.fa-angle-double-down{
+	float:right;
+	font-size: 12px;
+	margin-top: 5px;
+}
+/* Drop Down */
+#home .left_sidebar .open_sidebar nav ul li.open-item .sidebar-dd-menu{
+	display:none;
+	margin-top: 10px;
+}
+#home .left_sidebar .open_sidebar nav ul li .sidebar-dd-menu li{
+	border-bottom: 1px solid #48474766;
+	background: linear-gradient(180deg, transparent, #acaaaa17, #c1b7b71c);
+	text-align: center;
+	transition: all .5s linear;
+}
+#home .left_sidebar .open_sidebar nav ul li .sidebar-dd-menu li:hover{
+	background: linear-gradient(360deg, transparent, #acaaaa17, #c1b7b71c);
+}
+#home .left_sidebar .open_sidebar nav ul li .sidebar-dd-menu li:hover a{
+	color:red;
+}
+#home .left_sidebar .open_sidebar nav ul li .sidebar-dd-menu li a{
+	text-transform:none;
+	transition: all .5s linear;
+	
+}
+#home .left_sidebar .open_sidebar nav ul li .sidebar-dd-menu li a.active{
+	color:red;
+}
+
+
+/* ===================== Sidebar Click Icon 
+===================================================*/
+#home .left_sidebar .hide_sidebar{
+	width:calc(315px - 251px);
+	
+	height:100%;
+	background: #3131314a;
+	transition:all .5s linear;
+}
+/* Sidebar (index-1) */
+#home .left_sidebar .hide_sidebar1{
+	background: #00000061;
+}
+
+/* ==when Class 'collapse'add in home== */
+#home.collapse .left_sidebar .hide_sidebar{
+	width:calc(315px - 251px);
+	height:100%;
+	background: #3131314a;
+	transition:all .5s linear;
+}
+
+
+#home .left_sidebar .hide_sidebar .sidebar_icon{
+	position: relative;
+    top: 15px;
+	left: 16px;
+	cursor:pointer;
+	width: 30px;
+    height: 30px;
+}
+#home .left_sidebar .hide_sidebar .sidebar_icon span{
+	width:30px;
+	height:2px;
+	background:#fff;
+	margin:8px 0;
+	display:block;
+}
+/* ==when Class 'collapse'add in home== */
+#home.collapse .left_sidebar .hide_sidebar .sidebar_icon span:nth-child(1) {
+    transform: rotate(45deg);
+    position: absolute;
+    transition: all .6s linear;
+}
+#home.collapse .left_sidebar .hide_sidebar .sidebar_icon span:nth-child(2) {
+    transform: rotate(-45deg);
+    position: absolute;
+    transition: all .6s linear;
+}
+#home.collapse .left_sidebar .hide_sidebar .sidebar_icon span:nth-child(3) {
+    display: none;
+}
+
+
+
+#home .left_sidebar .hide_sidebar .sidebar_logo{
+	color: white;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 600;
+	position: absolute;
+    top: 50%;
+    transform: rotate(-90deg);
+}
+/* ==when Class 'collapse'add in home== */
+#home.collapse .left_sidebar .hide_sidebar .sidebar_logo{
+	display:none;
+	
+}
+
+
+
+
+/* ================== 2.2.Home Body(Content) 
+================================================*/
+#home .home_page{
+	width: calc(100% - 64px);
+    height: 100%;
+	z-index: 2;
+	transition: all .5s linear;
+}
+/* 1st Item */
+#home .home_page .home_content{
+	width: 100%;
+	height: 100%;
+    background: url(assets/img/slider19.png) no-repeat;
+    background-position: right bottom;
+	background-size: 800px 622px;
+	position: relative;
+	background-color: powderblue;
+}
+#home .home_page .home_content .home_content_flexbox{
+	
+}
+#home .home_page .home_content .home_content_flexbox .home_body_content_img{
+	float: right;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+#home .home_page .home_content .home_content_flexbox .home_body_content_img img{
+	    width: 890px;
+    height: 622px;
+}
+/* when Class 'collapse'add in home */
+#home.collapse .home_page{
+	width: calc(100% - 315px);
+}
+#home .home_page .home_content .home_body_content{
+	position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#home .home_page .home_content .home_body_content h2{
+	font-size: 54px;
+}
+#home .home_page .home_content .home_body_content span{
+	color:#fff;
+	background:#000;
+}
+#home .home_page .home_content .home_body_content p{
+	color:#666666;
+	font-size: 18px;
+}
+#home .home_page .home_content .home_body_content a{
+	color:#000;
+	font-size:18px;
+	letter-spacing: 1px;
+    border-bottom: 2px solid #000;
+	transition: all .1s linear;
+}
+#home .home_page .home_content .home_body_content a:hover{
+	color:red;
+	text-decoration:none;
+	border-bottom: 2px solid red;
+}
+/* 2nd Item */
+#home .home_page .home_content1{
+	width: 100%;
+	height: 100%;
+    background: url(assets/img/boy-transparent.png) no-repeat;
+    background-position: right bottom;
+	background-size: 800px 622px;
+	position: relative;
+	background-color: #253133;
+}
+#home .home_page .home_content1 .home_content_flexbox{
+	
+}
+#home .home_page .home_content1 .home_content_flexbox .home_body_content_img{
+	float: right;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+#home .home_page .home_content1 .home_content_flexbox .home_body_content_img img{
+	    width: 890px;
+    height: 622px;
+}
+/* when Class 'collapse'add in home */
+#home.collapse .home_page{
+	width: calc(100% - 315px);
+}
+#home .home_page .home_content1 .home_body_content{
+	position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#home .home_page .home_content1 .home_body_content h2{
+	font-size: 54px;
+}
+#home .home_page .home_content1 .home_body_content span{
+	color:#fff;
+	background:#000;
+}
+#home .home_page .home_content1 .home_body_content p{
+	color:#666666;
+	font-size: 18px;
+}
+#home .home_page .home_content1 .home_body_content a{
+	color:#fff;
+	font-size:18px;
+	letter-spacing: 1px;
+    border-bottom: 2px solid #fff;
+	transition: all .1s linear;
+}
+#home .home_page .home_content1 .home_body_content a:hover{
+	color:red;
+	text-decoration:none;
+	border-bottom: 2px solid red;
+}
+/* 3rd Item */
+#home .home_page .home_content2{
+	width: 100%;
+	height: 100%;
+    background: url(assets/img/slider18.png) no-repeat;
+    background-position: right bottom;
+	background-size: 675px 622px;
+	position: relative;
+	background-color: #607d8b;
+}
+#home .home_page .home_content2 .home_content_flexbox{
+	
+}
+#home .home_page .home_content2 .home_content_flexbox .home_body_content_img{
+	float: right;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+#home .home_page .home_content2 .home_content_flexbox .home_body_content_img img{
+	    width: 890px;
+    height: 622px;
+}
+/* when Class 'collapse'add in home */
+#home.collapse .home_page{
+	width: calc(100% - 315px);
+}
+#home .home_page .home_content2 .home_body_content{
+	position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#home .home_page .home_content2 .home_body_content h2{
+	font-size: 54px;
+}
+#home .home_page .home_content2 .home_body_content span{
+	color:#fff;
+	background:#000;
+}
+#home .home_page .home_content2 .home_body_content p{
+	color:#fff;
+	font-size: 18px;
+}
+#home .home_page .home_content2 .home_body_content a{
+	color:#000;
+	font-size:18px;
+	letter-spacing: 1px;
+    border-bottom: 2px solid #000;
+	transition: all .1s linear;
+}
+#home .home_page .home_content2 .home_body_content a:hover{
+	color:red;
+	text-decoration:none;
+	border-bottom: 2px solid red;
+}
+/* ============================ 2.2.1.Home Content(Video)
+========================================================= */
+#home .home_page .banner{
+	width:100%;
+	height:100%;
+	justify-content:center;
+	align-items: center;
+    box-sizing: border-box;
+	background: #3c302bad;
+}
+#home .home_page .banner video{
+	position: absolute;
+    /* top: 0px; */
+    right: 0px;
+    left: 0px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+/* ============================ 2.2.2.Home Content(Text)
+========================================================= */
+#home .home_page .banner .banner_content_bg{
+	position:relative;
+	z-index:1;
+	text-align: center;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#home .home_page .banner .banner_content_bg .home_body_content{}
+#home .home_page .banner .banner_content_bg .home_body_content h2{
+	color: white;
+    font-size: 54px;
+}
+#home .home_page .banner .banner_content_bg .home_body_content p{
+	color: white;
+	font-size: 18px;
+}
+#home .home_page .banner .banner_content_bg .home_body_content a{
+	color: whitesmoke;
+	font-size: 18px;
+	border-bottom: 2px solid whitesmoke;
+	transition: all .1s linear;
+}
+#home .home_page .banner .banner_content_bg .home_body_content a:hover{
+	color: red;
+	text-decoration:none;
+	border-bottom: 2px solid red;
+}
+/* ============================ 2.2.Home Body Slider
+========================================================= */
+.owl-carousel {
+    display: none;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+	position: relative;
+}
+.owl-carousel .owl-stage-outer {
+    height: 100%;
+}
+.owl-theme .owl-nav {
+	position: absolute;
+    bottom: 25px;
+	left: 50%;
+	transform: translate(-50%);
+}
+.owl-theme .owl-nav .owl-prev, .owl-theme .owl-nav .owl-next{
+	outline: none;
+}
+.owl-theme .owl-nav .owl-prev span, .owl-theme .owl-nav .owl-next span{
+	padding: 0px 10px;
+}
+.owl-theme .owl-dots{
+    position: absolute;
+    bottom: 0;
+	left: 50%;
+	transform: translate(-50%);
+	opacity:.5;
+	transition: all .3s ease;
+}
+.owl-theme .owl-dots:hover{
+	opacity:1;
+}
+.owl-theme .owl-dots .owl-dot {
+    outline: none;
+}
+.owl-theme .owl-dots .owl-dot span{
+	padding: 0px 6px;
+	height: 6px;
+}
+.owl-carousel .item{
+	height: 100vh;
+}
+/* 1st Item */
+#home .home_page .owl-carousel .home_content .home_body_content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#home .home_page .owl-carousel .home_content .home_body_content h2 {
+    color:#000;
+}
+/* 2nd Item */
+#home .home_page .owl-carousel .home_content1 .home_body_content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#home .home_page .owl-carousel .home_content1 .home_body_content h2 {
+    color:#000;
+}
+/* 3rd Item */
+#home .home_page .owl-carousel .home_content2 .home_body_content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#home .home_page .owl-carousel .home_content2 .home_body_content h2 {
+    color:#000;
+}
+
+/* ================================ 2.3.Scroll To Continue
+======================================================== */
+#scroll-to-continue{
+	position:relative;
+}
+#scroll-to-continue .scroll-btn{
+	width: 20px;
+	position:absolute;
+	top: -82px;
+	left:51.6%;
+	right:0;
+	z-index: 99;
+	opacity: 0.3;
+	transition: all .3s ease;
+	cursor:pointer;
+	
+}
+#scroll-to-continue .scroll-btn:hover{
+	opacity:1;
+	color: #06060675;
+}
+#scroll-to-continue .scroll-btn i.fa-mouse{
+	font-size: 26px;
+}
+#scroll-to-continue .scroll-btn i.angle-down1{
+	color:#f8f9fa;
+	position: absolute;
+	font-size: 19px;
+	left: 4px;
+}
+#scroll-to-continue .scroll-btn .stop-anim.angle-down1{
+	animation: iColor 1s infinite;
+	animation-delay: .5s;
+}
+#scroll-to-continue .scroll-btn i.angle-down2{
+	color:#92BABF;
+	position: absolute;
+	font-size: 19px;
+	left: 4px;
+	top: 37px;
+}
+#scroll-to-continue .scroll-btn .stop-anim.angle-down2{
+	animation: iColor 1s infinite;
+	animation-delay: .8s;
+}
+@keyframes iColor{
+	0%{
+		color:#85A7AD;
+	}
+	50%{
+		color:#f8f9fa;
+	}
+	100%{
+		color:#85A7AD;
+	}
+}
+/* ================================ 2.4.Go to Top Button
+========================================================== */
+.go_top{
+	position:fixed;
+	right:5px;
+	bottom:50px;
+	opacity:0;
+	cursor:pointer;
+	z-index: 9999;
+}
+.go_top i{
+	font-size: 22px;
+	color: #aea8a8c2;
+	transition: all .3s ease;
+}
+.go_top i:hover{
+	color: #686565ed;
+}
+.go_top_btn{
+	opacity:1;
+}
+
+
+
+/* ================================== 3.About Us
+======================================================== */
+#about{
+	height:auto;
+	background:#ffffff;
+	padding:100px 0px;
+}
+/* ================================== 3.1.About Header
+======================================================== */
+#about .about_h2{
+	text-align:center;
+	background: url(assets/img/icon/tri-arrow.png) no-repeat;
+    background-position: center bottom;
+    height: 90px;
+}
+#about .about_h2 h2{
+	font-size:32px;
+}
+/* ================================== 3.2.About Content
+======================================================== */
+#about .about_content{
+	padding-top:45px;
+}
+#about .about_content a{
+	color:#666666;
+	font-size:18px;
+	font-weight: 900;
+	line-height:2;
+	transition: color .5s linear;
+}
+#about .about_content a:hover{
+	color:#000;
+	text-decoration:none;
+}
+#about .about_content a i{
+	color:#666666;
+	padding-left: 10px;
+	transition: color .5s linear;
+}
+#about .about_content a:hover i{
+	color:#000;
+}
+#about .about_content_img img{
+	width:100%;
+}
+#about .about_content p{
+	color:#666666;
+	padding-top: 10px;
+	font-size:14px;
+	
+}
+/* ========================== 4.Works 
+====================================================*/
+#works{
+	min-height:500px;
+	padding: 100px 0px;
+    background: #f9f9f9;
+}
+#works.annar-works-bg{
+	 background: #fff;
+}
+/* ========= 4.1.Works Header 
+====================================================*/
+#works .works_h2{
+	text-align:center;
+}
+#works .works_h2 h2{
+	margin-bottom: 0px;
+	font-size:32px;
+}
+/* ========== 4.2.Works Content 
+====================================================*/
+                /* Isotope Menu */
+#works .isotope-menu{
+	padding: 45px 0;
+	text-align:center;
+}
+#works .isotope-menu .active{
+	color:#a4a4a4;
+}
+#works .isotope-menu > span{
+	font-size: 16px;
+	cursor: pointer;
+    margin-right: 8px;
+	transition: color .3s linear;
+
+}
+#works .isotope-menu > span:hover{
+	color:#a4a4a4;
+}				
+#works .isotope-menu span.slash{
+	color: #a4a4a4;
+	padding: 0px 10px;
+}				
+                /* Isotope Filter */
+#works .filter-area .filter-item .p_img{
+	margin-bottom:30px;
+}
+#works .filter-area .filter-item .p_img img{
+	width:100%;
+}
+
+
+
+/* ----------- Img :hover Effect (Start) --------- */
+.p_img_hover_container{
+	width:100%;
+	height:100%;
+	position:relative;
+}
+.p_img_hover_container .p_img_hover_img{
+	width:100%;
+	height:100%;
+	transition: all .5s ease;
+}
+.p_img_hover_container .p_img_hover_overlay{
+	position:absolute;
+	height:0;
+	width:0%;
+	opacity: 0;
+	top:0;
+	left:0;
+	background:#344f6c9c;
+	transition: all .5s ease;
+}
+.p_img_hover_container .p_img_hover_overlay a{
+	display: inline-block;
+	/* margin-top: 160px; */
+	border: 2px solid white;
+	color: white;
+	font-weight:700;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	padding: 6px 20px;
+	border-radius:30px 0 30px 0;
+	cursor:pointer;
+	transition: all .5s ease;
+}
+.p_img_hover_container .p_img_hover_overlay a:hover{
+	text-decoration:none;
+	color:red;
+	border: 2px solid #000;
+	background:#000;
+	
+}
+.p_img_hover_container:hover .p_img_hover_overlay{
+	width:60%;
+	opacity:1;
+	height:100%
+}
+.p_img_hover_container:hover .p_img_hover_img{
+	filter:blur(2px);
+}
+/* ------------- Img :hover Effect (End) --------- */
+
+
+
+#works .filter-area .filter-item .p_img .filter-item-content{
+	text-align: center;
+    padding: 25px 0px;  
+}
+#works .filter-area .filter-item .p_img .filter-item-content a:hover{
+	text-decoration:none;
+}
+#works .filter-area .filter-item .p_img .filter-item-content h4:hover{
+	color:red;
+}
+#works .filter-area .filter-item .p_img .filter-item-content h4{
+	font-size:18px;
+	color:#000;
+	transition: all .3s ease;
+}	 		
+#works .filter-area .filter-item .p_img .filter-item-content p{
+	color:#666666;
+	font-size:14px;
+	margin-bottom:0px;
+}
+#works .filter-area .filter-item .p_img .filter-item-content img{
+	width: 310px;
+	margin-top: 20px;
+}
+/* ============== 4.3.Works Footer 
+=================================================== */
+#works .work-footer{
+	text-align:center;
+}
+#works .work-footer a{
+	color:black;
+	font-size:18px;
+	letter-spacing: 1px;
+    border-bottom: 2px solid #000;
+	transition: all .1s linear;
+}
+#works .work-footer a:hover{
+	color:red;
+	text-decoration:none;
+	border-bottom: 2px solid red;
+}
+/* ============================== 5.Features 
+=================================================== */
+#features{
+	padding: 100px 0px;
+}
+#features.annar-features-bg{
+	background: #f9f9f9;
+}
+/* ========== 5.1.Features Header
+====================================================== */
+#features .features_h2{
+	text-align:center;
+	background: url(assets/img/icon/tri-arrow.png) no-repeat;
+    background-position: center bottom;
+    height: 90px;
+}
+#features .features_h2 h2{
+	font-size:32px;
+}
+/* =========== 5.2.Features Content area
+============================================================= */
+#features .features-content{
+	display: flex;
+    width: 825px;
+    padding-top: 45px;
+	margin: 0 auto;
+}
+#features .features-content .features-content-img{}
+#features .features-content .features-content-img img{}
+#features .features-content .features-content-text{
+	padding-left: 30px;
+	padding-top: 10px;
+}
+#features .features-content .features-content-text h2{
+	font-size:18px;
+}
+#features .features-content .features-content-text span{
+	color:#666666;
+	font-size:14px;
+}
+#features .features-content .features-content-text p{
+	color:#444444;
+	font-size:14px;
+	padding-top: 15px;
+}
+/* ================================= 6.Achivement
+========================================================== */
+#achivement{
+	background: linear-gradient(to right, rgb(0 0 0 / 55%), #0000008c), url(assets/img/achivement-bg.jpg) no-repeat top center fixed;
+	background-size:cover;
+	-webkit-background-size:cover;
+	padding:100px 0px;
+}
+/* ========= 6.1.Achivement Text Area
+========================================================== */
+#achivement .achivement-text{
+	margin-top: 160px;
+    margin-bottom: 30px;
+}
+#achivement .achivement-text h2{
+	color:#ffffff;
+	font-size:54px;
+}
+#achivement .achivement-text p{
+	color:#ffffff;
+	font-size:16px;
+}
+#achivement .achivement-text .achivement-btn{
+	padding-top: 20px;
+}
+#achivement .achivement-text .achivement-btn a{
+	color:#ffffff;
+	font-size:18px;
+	letter-spacing: 1px;
+    border-bottom: 2px solid #ffffff;
+	transition: all .1s linear;
+}
+#achivement .achivement-text a:hover{
+	color:red;
+	text-decoration:none;
+	border-bottom: 2px solid red;
+}
+/* =========================== 6.2.Achivement Image Area
+=========================================================== */
+#achivement img{
+	width: 230px;
+	height: 450px;
+}
+/* ==================================== 7.Counter
+=========================================================== */
+#counter{
+	padding:100px 0px;
+	background:#f9f9f9;
+}
+/* =================== 7.1.Counter Body
+============================================================= */
+#counter .counter-content{
+	display:flex;
+}
+#counter .counter-content img{}
+#counter .counter-content .counter-text{
+	padding-top: 10px;
+    padding-left: 15px;
+}
+#counter .counter-content .counter-text span{
+	font-size:22px;
+}
+#counter .counter-content .counter-text p{
+	color:#444444;
+	font-size:18px;
+}
+/* ====================================== 8.Our Team
+============================================================ */
+#team{
+	padding:100px 0px
+}
+/* =================== 8.1.Our Team Header
+============================================================= */
+#team .team_h2{
+	text-align:center;
+	background: url(assets/img/icon/tri-arrow.png) no-repeat;
+    background-position: center bottom;
+    height: 90px;
+}
+#team .team_h2 h2{
+	font-size:32px;
+}
+#team .team_p{
+	text-align:center;
+	padding:50px 0px;
+}
+#team .team_p p{
+	color:#666666;
+	font-size:14px;
+}
+/* =================== 8.2.Our Team Content
+============================================================= */
+#team .team-content{
+	border-bottom:2px solid #ededed;
+}
+#team .team-content img{
+	width:100%;
+}
+#team .team-content .team-content-text{
+	text-align:center;
+	padding:30px 0px;
+}
+#team .team-content .team-content-text h2{
+	font-size:18px;
+}
+#team .team-content .team-content-text h2 a{
+	color:#000;
+	transition:all .3s ease;
+}
+#team .team-content .team-content-text h2 a:hover{
+	color:red;
+	text-decoration:none;
+}
+#team .team-content .team-content-text p{
+	font-size:14px;
+	color:#666666;
+}
+
+/* ----------- 8.2.Img :hover Effect (Start) --------- */
+.team-content-hover-container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.team-content-hover-container .team-content-hover-img{}
+.team-content-hover-container .team-content-hover{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0px;
+	opacity:0;
+	background: #344f6c9c;
+	padding: 10px 10px;
+	text-align: center;
+	transition: all .5s ease;
+	overflow:hidden;
+}
+.team-content-hover-container:hover .team-content-hover{
+	height: 150px;
+	opacity:1;
+}
+.team-content-hover-container .team-content-hover .team-content-hover-body{}
+.team-content-hover-container .team-content-hover .team-content-hover-body h5{
+	color: #fff;
+}
+.team-content-hover-container .team-content-hover .team-content-hover-body hr{
+	background: white;
+	width: 115px;
+	margin: 10px auto;
+}
+.team-content-hover-container .team-content-hover .team-content-hover-body p{
+	color: #fff;
+}
+.team-content-hover-container .team-content-hover .team-content-hover-body .team-content-socail-icon{}
+.team-content-hover-container .team-content-hover .team-content-hover-body .team-content-socail-icon a{
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	border: 1px solid #31859f;
+	color: #fff;
+	border-radius: 50%;
+	margin-left: 7px;
+	transition: all .5s ease;
+	background: #31859f;
+}
+.team-content-hover-container .team-content-hover .team-content-hover-body .team-content-socail-icon a:hover{
+	background:transparent;
+	color:#fff;
+}
+.team-content-hover-container .team-content-hover .team-content-hover-body .team-content-socail-icon a i{
+	
+}
+/* ------------- 8.2.Img :hover Effect (End) --------- */
+
+
+
+
+
+
+
+
+/* ================================= 9.Video
+=========================================================== */
+.video-js {
+	position: relative;
+	width: 100%;
+}
+.my-video-dimensions {
+    height: 100vh;
+}
+.video-js .vjs-big-play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	outline:0;
+}
+#video{}
+#video .video{}
+#video .video video{
+	width: 100%;
+}
+/* ================================= 10.Our Skill
+=========================================================== */
+#skill{
+	padding:100px 0px;
+}
+/* ========= 10.1.Our Skill Header
+============================================================ */
+#skill .skill_h2{
+	height:90px;
+	text-align:center;
+	background:url(assets/img/icon/tri-arrow.png) no-repeat;
+	background-position:center bottom;
+}
+#skill .skill_h2 h2 {
+    font-size: 32px;
+}
+/* ========= 10.2.Our Skill Content
+============================================================ */
+#skill .skill-content{
+	width:810px;
+	height:auto;
+	margin:0 auto;
+	margin-top:50px;
+}
+/* Our Skill Content Text */
+#skill .skill-content .skill-content-text1{}
+#skill .skill-content .skill-content-text1 h2{
+	font-size:18px;
+}
+#skill .skill-content .skill-content-text1 span{
+	color:#666666;
+	font-size:14px;
+}
+#skill .skill-content .skill-content-text1 p{
+	color:#444444;
+	font-size:14px;
+	margin-bottom:0px;
+	padding-top: 20px;
+	line-height: 2.28;
+}
+/* Our Skill Content Progress Bar	 */
+#skill .skill-content .skill-content-text2{
+	/* transform: rotate(-90deg); */
+	display: flex;
+	justify-content: space-between;
+	padding-left: 50px;
+}
+#skill .skill-content .skill-content-text2 .single-skilbar{
+	box-sizing: border-box;
+    background: #d6d6d6c4;
+    width: 20px;
+    height: 100%;
+    position: relative;
+}
+#skill .skill-content .skill-content-text2 .single-skilbar .single-html{
+    width: 20px;
+    height: 90%;
+    background: black;
+    position: absolute;
+    bottom: 0;
+}
+#skill .skill-content .skill-content-text2 .single-skilbar .single-html h4{
+	font-size: 14px;
+    transform: rotate(-90deg);
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    right: 0;
+    color: white;
+}
+/* -----------------------------------
+------------------------------------- */
+.skillbarcont {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 50px;
+}
+.skillbarcont1{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 50px;
+}
+.skillbar {
+  width: 25px;
+  height: 100%;
+  position: relative;
+  background: #0f020209;
+  overflow: hidden;
+  box-shadow: 0 0 10px #00000028, inset 0 0 10px#00000028;
+  border: 1px solid #00000028;
+}
+
+.fill {
+  width: 100%;
+  background: #222;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.filltip {
+  color: white;
+  position: absolute;
+  transform: rotate(-90deg);
+  top: calc(100% - 130px);
+  margin: auto;
+  right: -82px;
+  height: 20px;
+  width: 200px;
+  font-size: 18px;
+  font-weight: bold;
+
+}
+
+.fill1 {
+  height: 95%;
+}
+
+.fill2 {
+  height: 90%;
+}
+
+.fill3 {
+  height: 100%;
+}
+
+.fill4 {
+  height: 100%;
+}
+
+.fill5 {
+  height: 50%;
+}
+
+.fill6 {
+  height: 80%;
+}
+
+.fill7 {
+  height: 65%;
+}
+
+.fill8 {
+  height: 70%;
+}
+/* --------------------------------- 
+--------------------------------- */
+/* ===================================11.Socail Platform
+=========================================================== */
+#socail-platform{}
+#socail-platform ul{
+	text-align: center;
+	list-style-type:none;
+	background:#f9f9f9;
+	height:132px;
+	border-top:2px solid #e1e1e1;
+	border-bottom:2px solid #e1e1e1;
+	margin-bottom:0px;
+}
+#socail-platform ul li{
+	display:inline-block;
+	width:220px;
+	height:130px;
+}
+
+
+#socail-platform ul li:nth-child(1){
+	border-right:1px solid #e1e1e1;
+	background:url(assets/img/socail-p1.png) no-repeat;
+	background-position:center center;
+	transition: all .3s ease;
+}
+#socail-platform ul li:nth-child(1):hover{
+	background:url(assets/img/socail-p11.png) no-repeat;
+	background-position:center center;
+}
+
+
+
+
+#socail-platform ul li:nth-child(2){
+	border-right:1px solid #e1e1e1;
+	background:url(assets/img/socail-p2.png) no-repeat;
+	background-position:center center;
+}
+#socail-platform ul li:nth-child(2):hover{
+	background:url(assets/img/socail-p21.png) no-repeat;
+	background-position:center center;
+}
+
+
+
+
+#socail-platform ul li:nth-child(3){
+	border-right:1px solid #e1e1e1;
+	background:url(assets/img/socail-p3.png) no-repeat;
+	background-position:center center;
+}
+#socail-platform ul li:nth-child(3):hover{
+	background:url(assets/img/socail-p31.png) no-repeat;
+	background-position:center center;
+}
+
+
+
+
+#socail-platform ul li:nth-child(4){
+	border-right:1px solid #e1e1e1;
+	background:url(assets/img/socail-p4.png) no-repeat;
+	background-position:center center;
+}
+#socail-platform ul li:nth-child(4):hover{
+	background:url(assets/img/socail-p41.png) no-repeat;
+	background-position:center center;
+}
+
+
+
+
+#socail-platform ul li:nth-child(5){
+	border-right:1px solid #e1e1e1;
+	background:url(assets/img/socail-p5.png) no-repeat;
+	background-position:center center;
+}
+#socail-platform ul li:nth-child(5):hover{
+	background:url(assets/img/socail-p51.png) no-repeat;
+	background-position:center center;
+}
+
+
+
+
+#socail-platform ul li:nth-child(6){
+	background:url(assets/img/socail-p6.png) no-repeat;
+	background-position:center center;
+}
+#socail-platform ul li:nth-child(6):hover{
+	background:url(assets/img/socail-p61.png) no-repeat;
+	background-position:center center;
+}
+
+
+
+
+#socail-platform ul li img{
+	
+}
+/* ===================================== 12.Slider
+========================================================= */
+#slider{
+	background:#e9e9e9;
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+/* ===================12.1.Slider Body
+============================================================= */
+.swiper-slide {
+	min-height:550px;
+	/* text-align: center; */
+	font-size: 18px;
+	
+
+
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+.swiper-slide .slide-content{}
+.swiper-slide .slide-content .slide-content-img{
+	position:relative;
+}
+
+.swiper-slide .slide-content img{
+	/* margin-left: 113px; */
+}
+.swiper-slide .slide-content .slide-content-text-area{
+	max-width: 740px;
+	height:140px;
+	display:flex;
+	margin-top:220px;
+	float:right;
+}
+.swiper-slide .slide-content .slide-content-text-area i{
+	padding-right: 38px;
+    color: #66666678;
+    font-size: 25px;
+}
+.swiper-slide .slide-content .slide-content-text-area .slide-content-text{}
+.swiper-slide .slide-content .slide-content-text-area .slide-content-text p{
+	font-size:14px;
+	color:#444444;
+	text-align: justify;
+}
+.swiper-slide .slide-content .slide-content-text-area .slide-content-text h5{
+	font-size:18px;
+	text-align:right;
+	
+}
+.swiper-slide .slide-content .slide-content-text-area .slide-content-text h6{
+	font-size:14px;
+	color:#444444;
+	text-align:right;
+
+}
+/* =============================== 13.Our News
+================================================= */
+#news{
+	padding:100px 0px;
+}
+#news .new-wrapper{
+	width:970px;
+	margin:0 auto;
+}
+/* ===================== 13.1.Our News Header
+================================================= */
+#news .news_h2{
+	height:90px;
+	text-align:center;
+	background:url(assets/img/icon/tri-arrow.png) no-repeat;
+	background-position:center bottom;
+}
+#news .news_h2 h2{
+	font-size:32px;
+}
+#news .news_p{
+	text-align:center;
+	padding:50px 0px;
+}
+#news .news_p p{
+	color:#666666;
+	font-size:14px;
+}
+/* ===================== 13.2.Our News Body
+================================================ */
+#news .new-wrapper .news-content{
+	padding-bottom: 50px;
+}
+#news .new-wrapper .news-content .news-content-img{}
+#news .new-wrapper .news-content .news-content-img img{
+	width:100%;
+}
+#news .new-wrapper .news-content .news-content-text{}
+#news .new-wrapper .news-content .news-content-text .news-content-text-header{
+	height:70px;
+	background:url(assets/img/icon/news-content-line.png) no-repeat;
+	background-position: bottom left;
+}
+#news .new-wrapper .news-content .news-content-text .news-content-text-header h2{
+	font-size:18px;
+}
+#news .new-wrapper .news-content .news-content-text .news-content-text-header a{
+	color:#909090;
+	font-size:14px;
+	transition: all .3s linear;
+}
+#news .new-wrapper .news-content .news-content-text .news-content-text-header a:hover{
+	text-decoration:none;
+	color:red;
+}
+
+#news .new-wrapper .news-content .news-content-text .news-content-text-body{
+	margin-top:25px;
+}
+#news .new-wrapper .news-content .news-content-text .news-content-text-body p{
+	color:#444444;
+	font-size:14px;
+}
+#news .new-wrapper .news-content .news-content-text .news-content-text-body .news-content-text-body-link{}
+#news .new-wrapper .news-content .news-content-text .news-content-text-body .news-content-text-body-link a{
+	color:#909090;
+	font-size:14px;
+	padding-left:5px;
+	transition: all .3s linear;
+}
+#news .new-wrapper .news-content .news-content-text .news-content-text-body .news-content-text-body-link a:hover{
+	text-decoration:none;
+	color:red;
+}
+/* ====================== 13.3.Our News Footer
+================================================ */
+#news .new-wrapper .news-footer{
+	text-align:center;
+} 
+#news .new-wrapper .news-footer a{
+	color:black;
+	font-size:18px;
+	letter-spacing: 1px;
+    border-bottom: 2px solid #000;
+	transition: all .1s linear;
+} 
+#news .new-wrapper .news-footer a:hover{
+	color:red;
+	text-decoration:none;
+	border-bottom: 2px solid red;
+}
+/* ======================================= 14.Form
+============================================================ */
+#form{
+	padding:100px 0px;
+	background:#f9f9f9;
+}
+#form .form-wrapper{
+	width:375px;
+	margin:0 auto;
+}
+#form .form-wrapper h2{
+	text-align:center;
+	font-size:32px;
+}
+#form .form-wrapper form{
+	padding-top:30px;
+}
+/* Name */
+#form .form-wrapper form .form-group{
+	position:relative;
+}
+#form .form-wrapper form .form-group input{
+	width:100%;
+	padding:10px 0px;
+	outline:0;
+	border:0;
+	border-bottom:2px solid #d1d1d1;
+	background:transparent;
+}
+#form .form-wrapper form .form-group label{
+	position:absolute;
+	top:0;
+	left:0;
+	font-size:18px;
+	pointer-events: none;
+	padding:10px 0px;
+	transition:.5s;
+}
+/* Email */
+#form .form-wrapper form .form-group input{
+	padding:10px 0px;
+}
+/* Message(Text Area) */
+#form .form-wrapper form .form-group textarea{
+	width:100%;
+	padding:10px 0px;
+	outline:0;
+	border:0;
+	border-bottom:2px solid #d1d1d1;
+	background:transparent;
+	transition:.5s;
+}
+/* Send Button */
+#form .form-wrapper form input[type="submit"]{
+	outline:0;
+	border:0;
+	border-bottom:2px solid #d1d1d1;
+	background:transparent;
+	margin-left: 188px;
+	transition: all .3s ease;
+}
+#form .form-wrapper form input[type="submit"]:hover{
+	color:#dc3545;
+	border-bottom:2px solid #dc3545;
+}
+
+/* When Input Focus, then Label Position Effect */
+#form .form-wrapper form .form-group input:focus ~ label, 
+#form .form-wrapper form .form-group input:valid ~ label{
+	top:-20px;
+	left: 0;
+	color: #dc3545;
+	font-size: 12px;
+}
+#form .form-wrapper form .form-group textarea:focus ~ label{
+	top:-20px;
+	left: 0;
+	color: #dc3545;
+	font-size: 12px;
+}
+/* ======================================= 15.Contact Us
+============================================================ */
+#contact{
+	padding:100px 0px;
+}
+#contact .contact-wrapper{
+	width:100%;
+	margin:0 auto;
+}
+/* ================= 15.1.Contact Us Header
+============================================================ */
+#contact .contact-h2{
+	text-align:center;
+	height:90px;
+	background:url(assets/img/icon/tri-arrow.png) no-repeat;
+	background-position: center bottom;
+}
+#contact .contact-h2 h2{
+	font-size:32px;
+}
+/* ================= 15.2.Contact Us Body
+============================================================ */
+#contact p{
+	color:#666666;
+	text-align:center;
+	font-size:14px;
+	margin:45px 0px;;
+}
+#contact .contact-wrapper .contact-text{
+	text-align:center;
+	padding: 15px 0px;
+}
+#contact .contact-wrapper .contact-text i{
+	color:#909090;
+	font-size: 25px;
+    padding-bottom: 20px;
+}
+#contact .contact-wrapper .contact-text h5{
+	font-size:14px;
+}
+/* ======================================16.Footer
+===================================================== */
+#footer{
+	padding:100px 0px;
+	background:#292929;
+}
+#footer .footer-wrapper{
+	width:300px;
+	margin:0 auto;
+}
+/* ==================== 16.1.Footer Header
+===================================================== */
+#footer .footer-wrapper .footer-h2{
+	height:90px;
+}
+#footer .footer-wrapper .footer-h2 h2{
+	color:#fff;
+	text-align:center;
+	padding-top: 45px;
+	background:url(assets/img/icon/cycele.png) no-repeat;
+	background-position:center top;
+}
+/* ==================== 16.2.Footer Body
+===================================================== */
+#footer .footer-wrapper .footer-content{
+	display:flex;
+	padding:40px 0px;
+	justify-content: center;
+}
+#footer .footer-wrapper .footer-content .footer-content-icon{
+	width:35px;
+	height:35px;
+	background:#707070;
+	border-radius:50%;
+	position: relative;
+	margin-left: 13px;
+	transition: all .5s ease;
+}
+#footer .footer-wrapper .footer-content .footer-content-icon:hover{
+	box-shadow: 0px 0px 10px -2px #dc3545;
+}
+#footer .footer-wrapper .footer-content .footer-content-icon i{
+	color:#292929;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	transition: all .5s ease;
+}
+#footer .footer-wrapper .footer-content .footer-content-icon:hover i{
+	color:#dc3545;
+	
+}
+/* ==================== 16.3.Footer Bottom
+===================================================== */
+#footer .footer-bottom{
+	text-align:center;
+}
+#footer .footer-bottom span{
+	color:#909090;
+}
+#footer .footer-bottom span a{
+	color:#9e9e9e6b;
+	transition: all .3s linear;
+}
+#footer .footer-bottom span a:hover{
+	text-decoration:none;
+	color:red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

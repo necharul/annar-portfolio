@@ -1,0 +1,3698 @@
+
+
+/*		Default Layout: 992px. 
+		Gutters: 24px.
+		Outer margins: 48px.
+		Leftover space for scrollbars @1024px: 32px.
+-------------------------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8      9      10
+px      68    160    252    344    436    528    620    712    804    896    */
+
+
+/* ====================== (1224px-992px) ======================
+====================[ Desktops and laptop ]====================
+============================================================= */
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 992px) and (max-width: 1224px) {
+/* ============ Nav Menu
+================================== */
+	#top_navbar .navbar_menu .navbar_logo {
+		padding: 10px 0;
+	}
+	#top_navbar .navbar_menu .navbar_logo a {
+		font-size: 24px;
+	}
+/* ====================================== 2.Home
+===========================================================	 */
+	#home {
+		height: 100vh;
+	}
+/* =============================== 2.2.Home Body(Content)
+========================================================== */
+/* 1st Item */
+	#home .home_page .owl-carousel .home_content {
+		background-size: 86% 93%;
+		background-position: 230px 42px;
+	}
+	#home .home_page .home_content .home_body_content h2 {
+		font-size: 38px;
+	}
+	#home .home_page .home_content .home_body_content p {
+		font-size: 18px;
+	}
+	#home .home_page .home_content .home_body_content a {
+		font-size: 18px;
+	}
+/* 2nd Item */
+	#home .home_page .owl-carousel .home_content1 {
+		background-size: 86% 93%;
+		background-position: 230px 42px;
+	}
+	#home .home_page .home_content1 .home_body_content h2 {
+		font-size: 38px;
+	}
+	#home .home_page .home_content1 .home_body_content p {
+		font-size: 18px;
+	}
+	#home .home_page .home_content1 .home_body_content a {
+		font-size: 18px;
+	}
+/* 3rd Item */
+	#home .home_page .owl-carouse2 .home_content1 {
+		background-size: 86% 93%;
+		background-position: 230px 42px;
+	}
+	#home .home_page .home_content2 .home_body_content h2 {
+		font-size: 38px;
+	}
+	#home .home_page .home_content2 .home_body_content p {
+		font-size: 18px;
+	}
+	#home .home_page .home_content2 .home_body_content a {
+		font-size: 18px;
+	}
+/* ================ 2.1.2.When Nav Hide then what area I see
+============================================================ */
+	#home .left_sidebar .hide_sidebar .sidebar_logo {
+		font-size: 26px;
+	}
+/* ================================ 3.1.About Header
+============================================================ */
+	#about .about_h2 h2 {
+		font-size: 30px;
+	}
+	#about .about_h2 {
+		height: 80px;
+	}
+/* ================================= 3.2.About Content
+============================================================= */
+	#about .about_content a {
+		color: #666666;
+		font-size: 17px;
+	}
+	#about .about_content_img{}
+	#about .about_content_img img{
+		
+	}
+/* ================================== 4.1.Works Header
+============================================================= */
+	#works .works_h2 h2 {
+		font-size: 30px;
+	}
+/* ===================== 4.2.Works Content (Isotope Plugin)
+============================================================ */
+	#works .isotope-menu > span {
+		font-size: 14px;
+	}
+	#works .filter-area .filter-item .p_img .filter-item-content h4 {
+		font-size: 16px;
+	}
+	#works .filter-area .filter-item .p_img .filter-item-content p {
+		font-size: 13px;
+	}
+/* ================================= 4.3.Works Footer
+============================================================ */
+	#works .work-footer a {
+		font-size: 16px;
+	}
+/* ================================= 5.1.Features Header
+============================================================ */
+	#features .features_h2 h2 {
+		font-size: 30px;
+	}
+	#features .features_h2{
+		height:80px;
+	}
+/* =============================== 5.2.Features Content area
+============================================================= */
+	#features .features-content .features-content-text h2 {
+		font-size: 18px;
+	}
+	#features .features-content .features-content-text span {
+		font-size: 13px;
+	}
+	#features .features-content .features-content-text p {
+		font-size: 13px;
+	}
+/* ============================== 6.1.Achivement Text Area
+============================================================ */
+	#achivement .achivement-text h2 {
+		font-size: 38px;
+	}
+	#achivement .achivement-text p {
+		font-size: 14px;
+	}
+	#achivement .achivement-text .achivement-btn a {
+		font-size: 16px;
+	}
+	#achivement img{
+		width: 210px;
+		height: 450px;
+	}
+/* =====================================7.1.Counter Body 
+============================================================ */
+	#counter .counter-content .counter-content-img1{
+		width: 63px;
+		height: 96px;
+	}
+	#counter .counter-content .counter-content-img2{
+		width: 63px;
+		height: 74px;
+	}
+	#counter .counter-content .counter-content-img3{
+		width: 68px;
+		height: 68px;
+	}
+	#counter .counter-content .counter-content-img4{
+		width: 48px;
+		height: 76px;
+	}
+	#counter .counter-content .counter-text span {
+		font-size: 20px;
+	}
+	#counter .counter-content .counter-text p {
+		font-size: 16px;
+	}
+/* =====================================8.1.Our Team Header
+============================================================= */
+	#team .team_h2 h2 {
+		font-size: 30px;
+	}
+	#team .team_h2{
+		height:80px;
+	}
+	#team .team_p p {
+		font-size: 13px;
+	}
+/* ================================== 8.2.Our Team Content
+=========================================================== */
+	#team .team-content .team-content-text h2 {
+		font-size: 16px;
+	}
+	#team .team-content .team-content-text p {
+		font-size: 13px;
+	}
+/* =================================== 10.1.Our Skill Header
+===========================================================	*/
+	#skill .skill_h2 h2 {
+		font-size: 30px;
+	}
+	#skill .skill_h2 {
+		height:80px;
+	}
+/* ================================= 10.2.Our Skill Content
+============================================================= */
+	#skill .skill-content .skill-content-text1 h2 {
+		font-size: 16px;
+	}
+	#skill .skill-content .skill-content-text1 span {
+		font-size: 13px;
+	}
+	#skill .skill-content .skill-content-text1 p {
+		font-size: 13px;
+	}
+/* ========================Our Skill Content Progress Bar
+============================================================ */
+	.filltip {
+		font-size: 16px;
+	}
+/* =====================================11.Socail Platform
+===========================================================	*/
+	#socail-platform ul li {
+		width: 160px;
+		height: 100px;
+	}
+	#socail-platform ul {
+		height: 102px;
+	}
+/* =====================================12.1.Slider Body
+============================================================ */
+	.swiper-slide .slide-content .slide-content-text-area i {
+		font-size: 23px;
+	}
+	.swiper-slide .slide-content .slide-content-text-area .slide-content-text p {
+		font-size: 13px;
+	}
+	.swiper-slide .slide-content .slide-content-text-area .slide-content-text h5 {
+		font-size: 16px;
+	}
+	.swiper-slide .slide-content .slide-content-text-area .slide-content-text h6 {
+		font-size: 13px;
+	}
+	.swiper-slide .slide-content img {
+		/* width: 420px;
+		height: 460px; */
+	}
+/* ===================================== 13.1.Our News Header
+============================================================= */
+	#news .new-wrapper .news_h2 h2 {
+		font-size: 30px;
+	}
+	#news .new-wrapper .news_h2{
+		height:80px;
+	}
+	#news .new-wrapper .news_p p {
+		font-size: 13px;
+	}
+/* ==================================== 13.2.Our News Body
+============================================================= */
+	#news .new-wrapper {
+		width: 960px;
+	}
+	#news .new-wrapper .news-content .news-content-text .news-content-text-header h2 {
+		font-size: 16px;
+	}
+	#news .new-wrapper .news-content .news-content-text .news-content-text-header a {
+		font-size: 13px;
+	}
+	#news .new-wrapper .news-content .news-content-text .news-content-text-body p {
+		font-size: 13px;
+	}
+	#news .new-wrapper .news-content .news-content-text .news-content-text-body .news-content-text-body-link a {
+		font-size: 13px;
+	}
+/* ==================================== 13.3.Our News Footer
+============================================================= */
+	#news .new-wrapper .news-footer a {
+		font-size: 16px;
+	}
+	
+	#form .form-wrapper h2 {
+		font-size: 30px;
+	}
+/* ================================ 15.1.Contact Us Header
+============================================================ */
+	#contact .contact-wrapper .contact-h2 h2 {
+		font-size: 30px;
+	}
+	#contact .contact-wrapper .contact-h2{
+		height:80px;
+	}
+/* ================================= 15.2.Contact Us Body
+============================================================= */
+	#contact .contact-wrapper p {
+		font-size: 13px;
+	}	
+	#contact .contact-wrapper .contact-text i {
+		font-size: 23px;
+	}
+	#contact .contact-wrapper .contact-text h5 {
+		font-size: 13px;
+	}
+/* =================================  16.1.Footer Header
+============================================================= */
+	#footer .footer-wrapper .footer-h2 h2 {
+		font-size: 26px;
+	}
+	#footer .footer-wrapper .footer-h2 {
+		height: 80px;
+	}
+/* =================================== 16.2.Footer Body
+============================================================ */
+	#footer .footer-wrapper .footer-content .footer-content-icon {
+		width: 30px;
+		height: 30px;
+	}
+/* =================================== 16.3.Footer Bottom
+=========================================================== */
+	#footer .footer-bottom span {
+		font-size: 14px;
+	}
+}
+
+
+
+
+/* ======================== (991px-768px) ==================
+==========================[ Tablet Layout ]====================
+============================================================= */
+/*		Tablet Layout: 768px.
+		Gutters: 24px.
+		Outer margins: 28px.
+		Inherits styles from: Default Layout.
+-----------------------------------------------------------------
+cols    1     2      3      4      5      6      7      8
+px      68    160    252    344    436    528    620    712    */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+/* ============ Nav Menu
+================================== */	
+	#top_navbar {
+		height: 60px;
+	}
+	#top_navbar .navbar_menu .navbar_logo {
+		padding: 12px 0;
+	}
+	#top_navbar .navbar_menu .navbar_logo a {
+		font-size: 24px;
+	}
+	#top_navbar .navbar_menu {
+	}
+	#top_navbar .navbar_menu nav {
+		background: #e9e9e9;
+		position: absolute;
+		top:80px;
+		left: -350px;
+		width: 30%;
+		transition:.3s ease;	
+	}
+	#top_navbar .navbar_menu nav.menu_p{
+		background: #000;
+		position: absolute;
+		top:60px;
+		left: 0px;
+		width: 30%;
+		max-height: 387px;
+		overflow-x: auto;
+		transition:.3s ease;
+	}
+	#top_navbar .navbar_menu nav ul{
+		margin-bottom:0px;
+	}
+	#top_navbar .navbar_menu nav ul li {
+		padding: 12px 10px;
+		width:100%;
+		margin-bottom: 1px;
+		background: #aaaaaa4a;
+	}
+	#top_navbar .navbar_menu nav ul li a i.fa-angle-double-down {
+		float: right;
+	}
+	
+/* ============ 1.1.Horizontzal Nav Reponsive Toggle Icon
+============================================================ */
+	#top_navbar .navbar_menu .menu-toggle{
+		display: block;
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		right: 8px;
+		top: 8px;
+		cursor: pointer;
+	}
+	#top_navbar .navbar_menu .menu-toggle span{
+		width: 30px;
+		height: 3px;
+		background: #fff;
+		display: block;
+		margin: 9px;
+	}
+	#top_navbar .navbar_menu nav ul li span i.fa-angle-double-down{
+		float:right;
+	}
+/* ============= Drop Down
+========================================== */
+	#top_navbar .navbar_menu nav ul li .dd-menu{
+		position:relative;
+		width: 80px;
+		top: 13px;
+		left:0px;
+		width: 100%;
+		display:none;
+	}
+	#top_navbar .navbar_menu nav ul li:hover .dd-menu{
+		width: 80px;
+		top: 13px;
+		left:0px;
+		width: 100%;
+	}
+	#top_navbar .navbar_menu nav ul li .dd-menu li{
+		
+	}
+	#top_navbar .navbar_menu nav ul li .dd-menu li a{
+		text-align: center;
+	}
+	#top_navbar .navbar_menu nav ul li .dd-menu li:hover{
+		
+	}
+	#top_navbar .navbar_menu nav ul li:hover span i.fa-angle-double-down{
+		pointer-events:none;
+	}
+	.fa-angle-double-down-color{
+		color:red;
+	}
+/* ====================================== 2.Home
+===========================================================	 */	
+	#home {
+		height: 100vh;
+	}
+/* =============================== 2.2.Home Body(Content)
+========================================================== */
+/* 1st Item */
+	#home .home_page .home_content {
+		background-size: 109% 88%;
+		background-position: 10px 85px;
+	}
+	#home .home_page .owl-carousel .home_content {
+		background-size: 97% 88%;
+		background-position: 100px 85px;
+	}
+	#home .home_page .home_content .home_body_content {
+		width: 40%;
+	}
+	#home .home_page .home_content .home_body_content h2 {
+		font-size: 32px;
+	}
+	#home .home_page .home_content .home_body_content p {
+		font-size: 18px;
+	}
+	#home .home_page .home_content .home_body_content a {
+		font-size: 18px;
+	}
+/* 2nd Item */
+	#home .home_page .home_content1 {
+		background-size: 109% 88%;
+		background-position: 10px 85px;
+	}
+	#home .home_page .owl-carousel .home_content1 {
+		background-size: 97% 88%;
+		background-position: 100px 85px;
+	}
+	#home .home_page .home_content1 .home_body_content {
+		width: 40%;
+	}
+	#home .home_page .home_content1 .home_body_content h2 {
+		font-size: 32px;
+	}
+	#home .home_page .home_content1 .home_body_content p {
+		font-size: 18px;
+	}
+	#home .home_page .home_content1 .home_body_content a {
+		font-size: 18px;
+	}
+/* 3rd Item */
+	#home .home_page .home_content2 {
+		background-size: 109% 88%;
+		background-position: 10px 85px;
+	}
+	#home .home_page .owl-carousel .home_content2 {
+		background-size: 70% 88%;
+		background-position: 308px 85px;
+	}
+	#home .home_page .home_content2 .home_body_content {
+		width: 55%;
+	}
+	#home .home_page .home_content2 .home_body_content h2 {
+		font-size: 32px;
+	}
+	#home .home_page .home_content2 .home_body_content p {
+		font-size: 18px;
+	}
+	#home .home_page .home_content2 .home_body_content a {
+		font-size: 18px;
+	}
+/* ================ 2.1.2.When Nav Hide then what area I see
+============================================================ */
+	#home .left_sidebar .hide_sidebar .sidebar_logo {
+		font-size: 24px;
+	}
+/* ================================ 3.1.About Header
+============================================================ */
+	#about {
+		height: auto;
+		padding:80px 0px;
+	}
+	#about .about_h2 h2 {
+		font-size: 28px;
+	}
+	#about .about_h2 {
+		height: 70px;
+	}
+/* ================================= 3.2.About Content
+============================================================= */
+	#about .about_content a {
+		color: #666666;
+		font-size: 14px;
+	}
+	#about .about_content p {
+		font-size: 12px;
+	}
+/* ================================== 4.1.Works Header
+============================================================= */
+	#works{
+		padding:80px 0px;
+	}
+	#works .works_h2 h2 {
+		font-size: 28px;
+	}
+/* ===================== 4.2.Works Content (Isotope Plugin)
+============================================================ */
+	#works .isotope-menu > span {
+		font-size: 12px;
+	}
+	#works .filter-area .filter-item .p_img .filter-item-content h4 {
+		font-size: 15px;
+	}
+	#works .filter-area .filter-item .p_img .filter-item-content p {
+		font-size: 12px;
+	}
+	#works .filter-area .filter-item .p_img .filter-item-content img {
+		width: 95%;
+	}
+/* ================================= 4.3.Works Footer
+============================================================ */
+	#works .work-footer a {
+		font-size: 14px;
+	}
+/* ================================= 5.1.Features Header
+============================================================ */
+	#features{
+		padding:80px 0px;
+	}
+	#features .features_h2 h2 {
+		font-size: 28px;
+	}
+	#features .features_h2{
+		height:70px;
+	}
+/* =============================== 5.2.Features Content area
+============================================================= */
+	#features .features-content {
+		width: 645px;
+	}
+	#features .features-content .features-content-img img {
+		/* width: 100%; */
+	}
+	#features .features-content .features-content-text h2 {
+		font-size: 16px;
+	}
+	#features .features-content .features-content-text span {
+		font-size: 12px;
+	}
+	#features .features-content .features-content-text p {
+		font-size: 12px;
+		padding-right: 80px;
+	}
+/* ============================== 6.1.Achivement Text Area
+============================================================ */
+	#achivement{
+		padding:80px 0px;
+	}
+	#achivement .achivement-text h2 {
+		font-size: 36px;
+	}
+	#achivement .achivement-text p {
+		font-size: 13px;
+	}
+	#achivement .achivement-text .achivement-btn a {
+		font-size: 14px;
+	}
+	#achivement img{
+		width: 200px;
+		height: 420px;
+	}
+/* =====================================7.1.Counter Body 
+============================================================ */
+	#counter{
+		padding:80px 0px;
+	}
+	#counter .counter-content .counter-content-img1{
+		width: 61px;
+		height: 94px;
+	}
+	#counter .counter-content .counter-content-img2{
+		width: 61px;
+		height: 72px;
+		margin-top: 13px;
+	}
+	#counter .counter-content .counter-content-img3{
+		width: 66px;
+		height: 66px;
+		margin-top: 18px;
+	}
+	#counter .counter-content .counter-content-img4{
+		width: 46px;
+		height: 74px;
+		margin-top: 10px;
+	}
+	#counter .counter-content .counter-text span {
+		font-size: 18px;
+	}
+	#counter .counter-content .counter-text p {
+		font-size: 15px;
+	}
+/* =====================================8.1.Our Team Header
+============================================================= */
+	#team{
+		padding:80px 0px
+	}
+	#team .team_h2 h2 {
+		font-size: 28px;
+	}
+	#team .team_h2{
+		height:70px;
+	}
+	#team .team_p p {
+		font-size: 12px;
+	}
+/* ================================== 8.2.Our Team Content
+=========================================================== */
+	#team .team-content .team-content-text h2 {
+		font-size: 14px;
+	}
+	#team .team-content .team-content-text p {
+		font-size: 12px;
+	}
+/* =================================== 10.1.Our Skill Header
+===========================================================	*/
+	#skill{
+		padding:80px 0px
+	}
+	#skill .skill_h2 h2 {
+		font-size: 28px;
+	}
+	#skill .skill_h2 {
+		height:70px;
+	}
+/* ================================= 10.2.Our Skill Content
+============================================================= */
+	#skill .skill-content {
+		width: 700px;
+	}
+	#skill .skill-content .skill-content-text1 h2 {
+		font-size: 14px;
+	}
+	#skill .skill-content .skill-content-text1 span {
+		font-size: 12px;
+	}
+	#skill .skill-content .skill-content-text1 p {
+		font-size: 12px;
+	}
+/* ========================Our Skill Content Progress Bar
+============================================================ */
+	.skillbarcont {
+		justify-content: normal;
+		padding-left: 40px;
+	}
+	.skillbar {
+		margin-left: 12px;
+	}
+	.filltip {
+		font-size: 16px;
+	}
+/* =====================================11.Socail Platform
+===========================================================	*/
+	#socail-platform ul li:nth-child(1) {
+		background-size: 70% 30%;
+	}
+	#socail-platform ul li:nth-child(2) {
+		background-size: 70% 30%;
+	}
+	#socail-platform ul li:nth-child(3) {
+		background-size: 70% 30%;
+	}
+	#socail-platform ul li:nth-child(4) {
+		background-size: 70% 30%;
+	}
+	#socail-platform ul li:nth-child(5) {
+		background-size: 70% 30%;
+	}
+	#socail-platform ul li:nth-child(6) {
+		background-size: 70% 30%;
+	}
+	#socail-platform ul li {
+		width: 120px;
+		height: 85px;
+	}
+	#socail-platform ul {
+		height: 87px;
+	}
+/* =====================================12.1.Slider Body
+============================================================ */
+	.swiper-slide .slide-content .slide-content-text-area {
+		/* width: 350px; */
+	}
+	.swiper-slide .slide-content .slide-content-text-area i {
+		font-size: 21px;
+	}
+	.swiper-slide .slide-content .slide-content-text-area .slide-content-text p {
+		font-size: 14px;
+	}
+	.swiper-slide .slide-content .slide-content-text-area .slide-content-text h5 {
+		font-size: 14px;
+	}
+	.swiper-slide .slide-content .slide-content-text-area .slide-content-text h6 {
+		font-size: 12px;
+	}
+	.swiper-slide .slide-content img {
+		/* width: 370px;
+		height: 400px; */
+	}
+	.swiper-slide .slide-content img {
+		/* position: relative;
+		bottom: -80px; */
+	}
+/* ===================================== 13.1.Our News Header
+============================================================= */
+	#news{
+		padding:80px 0px
+	}
+	#news .news_h2 h2 {
+		font-size: 28px;
+	}
+	#news .news_h2{
+		height:70px;
+	}
+	#news .news_p p {
+		font-size: 12px;
+	}
+/* ==================================== 13.2.Our News Body
+============================================================= */
+	#news .new-wrapper {
+		width: 100%;
+	}
+	#news .new-wrapper .news-content .news-content-text .news-content-text-header h2 {
+		font-size: 14px;
+	}
+	#news .new-wrapper .news-content .news-content-text .news-content-text-header a {
+		font-size: 12px;
+	}
+	#news .new-wrapper .news-content .news-content-text .news-content-text-body p {
+		font-size: 12px;
+	}
+	#news .new-wrapper .news-content .news-content-text .news-content-text-body .news-content-text-body-link a {
+		font-size: 12px;
+	}
+/* ==================================== 13.3.Our News Footer
+============================================================= */
+	#news .new-wrapper .news-footer a {
+		font-size: 14px;
+	}
+/* ===================================== 14.Form	 
+=========================================================== */
+	#form{
+		padding:80px 0px
+	}
+	#form .form-wrapper h2 {
+		font-size: 28px;
+	}
+	#form .form-wrapper form .form-group label {
+		font-size: 16px;
+	}
+	#form .form-wrapper form input[type="submit"] {
+		font-size: 14px;
+	}
+/* ================================ 15.1.Contact Us Header
+============================================================ */
+	#contact{
+		padding:80px 0px
+	}
+	#contact .contact-h2 h2 {
+		font-size: 28px;
+	}
+	#contact .contact-h2{
+		height:70px;
+	}
+	#contact p {
+		font-size: 12px;
+	}
+/* ================================= 15.2.Contact Us Body
+============================================================= */
+		
+	#contact .contact-wrapper .contact-text i {
+		font-size: 21px;
+	}
+	#contact .contact-wrapper .contact-text h5 {
+		font-size: 12px;
+	}
+/* =================================  16.1.Footer Header
+============================================================= */
+	#footer{
+		padding:80px 0px
+	}
+	#footer .footer-wrapper .footer-h2 h2 {
+		font-size: 24px;
+	}
+	#footer .footer-wrapper .footer-h2 {
+		height: 80px;
+	}
+/* =================================== 16.2.Footer Body
+============================================================ */
+	#footer .footer-wrapper .footer-content .footer-content-icon {
+		width: 28px;
+		height: 28px;
+	}
+/* =================================== 16.3.Footer Bottom
+=========================================================== */
+	#footer .footer-bottom span {
+		font-size: 13px;
+	}
+}
+
+
+
+/* ======================== (767px-480px) ====================
+==========================[ Mobile Layout ]====================
+============================================================= */
+/*		Mobile Layout: 320px.
+		Gutters: 24px.
+		Outer margins: 34px.
+		Inherits styles from: Default Layout.
+---------------------------------------------
+cols    1     2      3
+px      68    160    252    */
+
+@media only screen and (max-width: 767px) {
+/* ============ Nav Menu
+================================== */	
+	#top_navbar {
+		height: 60px;
+	}
+	#top_navbar .navbar_menu .navbar_logo {
+		padding: 13px 0;
+	}
+	#top_navbar .navbar_menu .navbar_logo a {
+		font-size: 24px;
+	}
+	#top_navbar .navbar_menu {
+	}
+	#top_navbar .navbar_menu nav {
+		background: #e9e9e9;
+		position: absolute;
+		top:70px;
+		left: -350px;
+		width: 30%;
+		transition:.3s ease;	
+	}
+	#top_navbar .navbar_menu nav.menu_p{
+		background: #000;
+		position: absolute;
+		top:70px;
+		left: 0px;
+		width: 30%;
+		transition:.3s ease;
+	}
+	#top_navbar .navbar_menu nav ul{
+		margin-bottom:0px;
+	}
+	#top_navbar .navbar_menu nav ul li {
+		padding: 12px 10px;
+		width:100%;
+		margin-bottom: 1px;
+		background: #aaaaaa4a;
+	}
+	#top_navbar .navbar_menu nav ul li a i.fa-angle-double-down {
+		float: right;
+	}
+	
+/* ============ 1.1.Horizontzal Nav Reponsive Toggle Icon
+============================================================ */
+	#top_navbar .navbar_menu .menu-toggle{
+		display: block;
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		right: 13px;
+		top: 9px;
+		cursor: pointer;
+	}
+	#top_navbar .navbar_menu .menu-toggle span{
+		width: 30px;
+		height: 3px;
+		background: #fff;
+		display: block;
+		margin: 9px;
+	}
+	#top_navbar .navbar_menu nav ul li span i.fa-angle-double-down{
+		float:right;
+	}
+/* ============= Drop Down
+========================================== */
+	#top_navbar .navbar_menu nav ul li .dd-menu{
+		position:relative;
+		width: 80px;
+		top: 13px;
+		left:0px;
+		width: 100%;
+		display:none;
+	}
+	#top_navbar .navbar_menu nav ul li:hover .dd-menu{
+		width: 80px;
+		top: 13px;
+		left:0px;
+		width: 100%;
+	}
+	#top_navbar .navbar_menu nav ul li .dd-menu li{
+		
+	}
+	#top_navbar .navbar_menu nav ul li .dd-menu li a{
+		
+	}
+	#top_navbar .navbar_menu nav ul li .dd-menu li:hover{
+		
+	}
+	#top_navbar .navbar_menu nav ul li:hover span i.fa-angle-double-down{
+		pointer-events:none;
+	}
+	.fa-angle-double-down-color{
+		color:red;
+	}
+/* ====================================== 2.Home
+===========================================================	 */	
+	#home {
+		height: 100vh;
+	}
+/* ===================================== 2.1.Home Sidebar
+============================================================  */
+	#home .left_sidebar {
+		width: 50px;
+	}
+	#home.collapse .left_sidebar {
+		width: 200px;
+	}
+	
+	#home .left_sidebar .hide_sidebar .sidebar_icon {
+		position: relative;
+		top: 15px;
+		left: 9px;
+		cursor: pointer;
+		width: 30px;
+		height: 30px;
+	}
+/* ================================= 2.1.1.Side Nav Bar Logo
+============================================================ */
+	#home .left_sidebar .open_sidebar .logo_circle i {
+		font-size: 14px;
+	}
+	#home .left_sidebar .open_sidebar .sidebar_header a {
+		font-size: 24px;
+	}
+	#home .left_sidebar .open_sidebar .sidebar_header {
+		padding-top: 15px;
+		padding-bottom: 23px;
+	}
+	#home .left_sidebar .open_sidebar .sidebar_header .logo_circle {
+		padding-bottom: 20px;
+	}
+
+/* =============================== 2.2.Home Body(Content)
+========================================================== */
+	#home .home_page {
+		width: calc(100% - 50px);
+	}
+	#home.collapse .home_page {
+		width: calc(100% - 200px);
+	}
+/* 1st Item */
+	#home .home_page .home_content {
+		background-size: 148% 110%;
+	}
+	#home .home_page .home_content .home_body_content {
+		width: 170px;
+	}
+	#home .home_page .home_content .home_body_content h2 {
+		font-size: 24px;
+	}
+	#home .home_page .home_content .home_body_content p {
+		font-size: 10px;
+	}
+	#home .home_page .home_content .home_body_content a {
+		font-size: 14px;
+	}
+/* 2nd Item */
+	#home .home_page .home_content1 {
+		background-size: 148% 110%;
+	}
+	#home .home_page .home_content1 .home_body_content {
+		width: 170px;
+	}
+	#home .home_page .home_content1 .home_body_content h2 {
+		font-size: 24px;
+	}
+	#home .home_page .home_content1 .home_body_content p {
+		font-size: 10px;
+	}
+	#home .home_page .home_content1 .home_body_content a {
+		font-size: 14px;
+	}
+/* 3rd Item */
+	#home .home_page .home_content2 {
+		background-size: 148% 110%;
+	}
+	#home .home_page .home_content2 .home_body_content {
+		width: 170px;
+	}
+	#home .home_page .home_content2 .home_body_content h2 {
+		font-size: 24px;
+	}
+	#home .home_page .home_content2 .home_body_content p {
+		font-size: 10px;
+	}
+	#home .home_page .home_content2 .home_body_content a {
+		font-size: 14px;
+	}
+/* ================ 2.1.2.When Nav Hide then what area I see
+============================================================ */
+	#home .left_sidebar .hide_sidebar .sidebar_logo {
+		font-size: 24px;
+		padding-bottom: 7px;
+	}
+	#home .left_sidebar .hide_sidebar .sidebar_icon {
+		left: 9px;
+	}
+/* ===============================2.1.2.Side Nav Bar Aera
+=========================================================== */
+	#home .left_sidebar .open_sidebar nav ul li a {
+		text-decoration: none;
+		color: whitesmoke;
+		font-size: 11px;
+		display: block;
+		font-weight: 900;
+		text-transform: uppercase;
+	}
+	#home .left_sidebar .open_sidebar nav ul li a i {
+		font-size: 15px;
+	}
+/* ===========================================3.About Us
+============================================================ */
+	#about {
+		padding: 60px 0px;
+	}
+/* ================================ 3.1.About Header
+============================================================ */
+	#about {
+		height: auto;
+	}
+	#about .about_h2 h2 {
+		font-size: 26px;
+	}
+	#about .about_h2 {
+		height: 65px;
+	}
+/* ================================= 3.2.About Content
+============================================================= */
+	#about .about_content {
+		text-align: center;
+	}
+	#about .about_content a {
+		color: #666666;
+		font-size: 13px;
+	}
+	#about .about_content p {
+		font-size: 12.5px;
+	}
+/* =================================== 4.Works
+============================================================ */
+	#works{
+		padding: 60px 0px;
+	}
+/* ================================== 4.1.Works Header
+============================================================= */
+	#works .works_h2 h2 {
+		font-size: 26px;
+	}
+/* ===================== 4.2.Works Content (Isotope Plugin)
+============================================================ */
+	#works .isotope-menu {
+		padding: 30px 0;
+	}
+	#works .isotope-menu > span {
+		font-size: 11px;
+	}
+	#works .filter-area .filter-item .p_img {
+		margin: 0 auto;
+		width: 90%;
+		margin-bottom: 30px;
+	}
+	#works .filter-area .filter-item .p_img .filter-item-content h4 {
+		font-size: 15px;
+	}
+	#works .filter-area .filter-item .p_img .filter-item-content p {
+		font-size: 11px;
+	}
+	#works .filter-area .filter-item .p_img .filter-item-content img {
+		width: 95%;
+	}
+	#works .filter-area .filter-item .p_img img {
+		width: 100%;
+		height: auto;
+	}
+/* ================================= 4.3.Works Footer
+============================================================ */
+	#works .work-footer a {
+		font-size: 13px;
+	}
+/* ================================= 5.Features
+=========================================================== */
+	#features {
+		padding:60px 0px;
+	}
+/* ================================= 5.1.Features Header
+============================================================ */
+	#features .features_h2 h2 {
+		font-size: 26px;
+	}
+	#features .features_h2{
+		height:65px;
+	}
+/* =============================== 5.2.Features Content area
+============================================================= */
+	#features .features-content {
+		width: auto;
+		text-align: center;
+	}
+	#features .features-content .features-content-img img {
+		width: 125px;
+		height: 125px;
+	}
+	#features .features-content .features-content-text {
+		padding-left: 0px;
+		padding-top: 0px;
+	}
+	#features .features-content .features-content-text h2 {
+		font-size: 14px;
+		margin-top: 25px;
+	}
+	#features .features-content .features-content-text span {
+		font-size: 12px;
+	}
+	#features .features-content .features-content-text p {
+		font-size: 12px;
+		padding-right: 0px;
+	}
+/* ====================================6.Achivement
+========================================================== */
+	#achivement{
+		padding:60px 0px;
+	}
+/* ============================== 6.1.Achivement Text Area
+============================================================ */
+	#achivement .achivement-text {
+		margin-top: 0px;
+	}
+	#achivement .achivement-text h2 {
+		font-size: 36px;
+	}
+	#achivement .achivement-text p {
+		font-size: 13px;
+	}
+	#achivement .achivement-text .achivement-btn {
+		padding-top: 10px;
+	}
+	#achivement .achivement-text .achivement-btn a {
+		font-size: 14px;
+	}
+	#achivement img{
+		width: 200px;
+		height: 420px;
+	}
+/* ============================================7.Counter
+========================================================= */
+	#counter{
+		padding:60px 0px;
+	}
+/* =====================================7.1.Counter Body 
+============================================================ */
+	#counter .counter-content {
+		justify-content: center;
+	}
+	#counter .counter-content .counter-content-img1{
+		width: 57px;
+		height: 90px;
+		margin-left: -34px;
+	}
+	#counter .counter-content .counter-content-img2{
+		width: 57px;
+		height: 68px;
+		margin-top: 13px;
+	}
+	#counter .counter-content .counter-content-img3{
+		width: 62px;
+		height: 62px;
+		margin-top: 18px;
+	}
+	#counter .counter-content .counter-content-img4{
+		width: 42px;
+		height: 70px;
+		margin-top: 10px;
+	}
+	#counter .counter-content .counter-text span {
+		font-size: 18px;
+	}
+	#counter .counter-content .counter-text p {
+		font-size: 15px;
+	}
+/* ===================================8.Our Team
+================================================== */
+	#team{
+		padding:60px 0px;
+	}
+/* =====================================8.1.Our Team Header
+============================================================= */
+	#team .team_h2 h2 {
+		font-size: 26px;
+	}
+	#team .team_h2{
+		height:65px;
+	}
+	#team .team_p p {
+		font-size: 11px;
+	}
+/* ================================== 8.2.Our Team Content
+=========================================================== */
+	#team .team-content {
+		width: 80%;
+		margin: 0 auto;
+		margin-bottom: 50px;
+	}
+	#team .team-content .team-content-text h2 {
+		font-size: 13px;
+	}
+	#team .team-content .team-content-text p {
+		font-size: 12px;
+	}
+/* =================================== 10.Our Skill
+========================================================== */
+#skill{
+	padding:60px 0px;
+}
+/* =================================== 10.1.Our Skill Header
+===========================================================	*/
+	#skill .skill_h2 h2 {
+		font-size: 26px;
+	}
+	#skill .skill_h2 {
+		height:65px;
+	}
+/* ================================= 10.2.Our Skill Content
+============================================================= */
+	#skill .skill-content {
+		width: 100%;
+		text-align: center;
+	}
+	#skill .skill-content .skill-content-text1 h2 {
+		font-size: 14px;
+	}
+	#skill .skill-content .skill-content-text1 span {
+		font-size: 12px;
+	}
+	#skill .skill-content .skill-content-text1 p {
+		font-size: 12px;
+	}
+/* ========================Our Skill Content Progress Bar
+============================================================ */
+	.skillbarcont {
+		justify-content: normal;
+		padding-left: 150px;
+		height: 230px;
+		margin-top: 80px;
+	}
+	.skillbar {
+		margin-left: 12px;
+	}
+	.filltip {
+		font-size: 16px;
+	}
+/* =====================================11.Socail Platform
+===========================================================	*/
+	#socail-platform ul li:nth-child(1) {
+		background-size: 50% 20%;
+	}
+	#socail-platform ul li:nth-child(2) {
+		background-size: 50% 20%;
+	}
+	#socail-platform ul li:nth-child(3) {
+		background-size: 50% 20%;
+	}
+	#socail-platform ul li:nth-child(4) {
+		background-size: 50% 20%;
+	}
+	#socail-platform ul li:nth-child(5) {
+		background-size: 50% 20%;
+	}
+	#socail-platform ul li:nth-child(6) {
+		background-size: 50% 20%;
+	}
+	#socail-platform ul li {
+		width: 70px;
+		height: 47px;
+	}
+	#socail-platform ul {
+		/* height: 49px; */
+	}
+/* =====================================12.1.Slider Body
+============================================================ */
+	.swiper-slide {
+		/* height: 350px; */
+	}
+	.swiper-slide .slide-content .slide-content-text-area {
+		/* width: 233px;
+		margin-bottom: 300px;
+		margin-top: 310px; */
+	}
+	.swiper-slide .slide-content .slide-content-text-area i {
+		font-size: 21px;
+		/* padding-right: 18px; */
+	}
+	.swiper-slide .slide-content .slide-content-text-area .slide-content-text p {
+		font-size: 11px;
+	}
+	.swiper-slide .slide-content .slide-content-text-area .slide-content-text h5 {
+		font-size: 14px;
+	}
+	.swiper-slide .slide-content .slide-content-text-area .slide-content-text h6 {
+		font-size: 12px;
+	}
+	.swiper-slide .slide-content img {
+		/* width: 239px;
+		height: 304px; */
+	}
+	.swiper-slide .slide-content img {
+		/* position: relative;
+		bottom: -250px; */
+	}
+/* ==================================== 13.Our News
+=========================================================*/
+	#news{
+		padding:60px 0px;
+	}
+/* ===================================== 13.1.Our News Header
+============================================================ */
+	#news .news_h2 h2 {
+		font-size: 26px;
+	}
+	#news .news_h2{
+		height:65px;
+	}
+	#news .news_p p {
+		font-size: 12px;
+	}
+/* ==================================== 13.2.Our News Body
+============================================================= */
+	#news .new-wrapper {
+		width: 100%;
+		text-align: center;
+	}
+	#news .new-wrapper .news-content {
+		padding-bottom: 60px;
+	}
+	#news .new-wrapper .news-content .news-content-text .news-content-text-header {
+		background-position: bottom center;
+	}
+	#news .new-wrapper .news-content .news-content-text .news-content-text-header h2 {
+		font-size: 14px;
+		margin-top:15px;
+	}
+	#news .new-wrapper .news-content .news-content-text .news-content-text-header a {
+		font-size: 12px;
+	}
+	#news .new-wrapper .news-content .news-content-text .news-content-text-body p {
+		font-size: 12px;
+	}
+	#news .new-wrapper .news-content .news-content-text .news-content-text-body .news-content-text-body-link a {
+		font-size: 12px;
+	}
+/* ==================================== 13.3.Our News Footer
+============================================================= */
+	#news .new-wrapper .news-footer a {
+		font-size: 14px;
+	}
+/* ====================================== 14.Form
+===================================================== */
+	#form{
+		padding:60px 0px;
+	}
+/* ===================================== 14.Form	 
+=========================================================== */
+	#form .form-wrapper h2 {
+		font-size: 26px;
+	}
+	#form .form-wrapper form .form-group label {
+		font-size: 16px;
+	}
+	#form .form-wrapper form input[type="submit"] {
+		font-size: 14px;
+	}
+/* 15.Contact Us */
+	#contact{
+		padding:60px 0px;
+	}
+/* ================================ 15.1.Contact Us Header
+============================================================ */
+	#contact .contact-h2 h2 {
+		font-size: 26px;
+	}
+	#contact .contact-h2{
+		height:65px;
+	}
+	#contact p {
+		font-size: 12px;
+	}
+/* ================================= 15.2.Contact Us Body
+============================================================= */
+		
+	#contact .contact-wrapper .contact-text i {
+		font-size: 21px;
+	}
+	#contact .contact-wrapper .contact-text h5 {
+		font-size: 12px;
+	}
+/* =================================  16.1.Footer Header
+============================================================= */
+	#footer{
+		padding:60px 0px;
+	}
+	#footer .footer-wrapper .footer-h2 h2 {
+		font-size: 24px;
+	}
+	#footer .footer-wrapper .footer-h2 {
+		height: 80px;
+	}
+/* =================================== 16.2.Footer Body
+============================================================ */
+	#footer .footer-wrapper .footer-content .footer-content-icon {
+		width: 28px;
+		height: 28px;
+	}
+/* =================================== 16.3.Footer Bottom
+=========================================================== */
+	#footer .footer-bottom span {
+		font-size: 13px;
+	}	
+	
+	
+}
+
+/*		Wide Mobile Layout: 480px.
+		Gutters: 24px.
+		Outer margins: 22px.
+		Inherits styles from: Default Layout, Mobile Layout.
+------------------------------------------------------------
+cols    1     2      3      4      5
+px      68    160    252    344    436    */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+/* ============ Nav Menu
+================================== */	
+	#top_navbar {
+		height: 60px;
+	}
+	#top_navbar .navbar_menu .navbar_logo {
+		padding: <12></12>px 0;
+	}
+	#top_navbar .navbar_menu .navbar_logo a {
+		font-size: 24px;
+	}
+	#top_navbar .navbar_menu {
+	}
+	#top_navbar .navbar_menu nav {
+		background: #e9e9e9;
+		position: absolute;
+		top:75px;
+		left: -425px;
+		width: 30%;
+		transition:.3s ease;	
+	}
+	#top_navbar .navbar_menu nav.menu_p{
+		background: #000;
+		position: absolute;
+		top:60px;
+		left: 0px;
+		width: 30%;
+		max-height: 370px;
+overflow-x: auto;
+		transition:.3s ease;
+	}
+	#top_navbar .navbar_menu nav ul{
+		margin-bottom:0px;
+	}
+	#top_navbar .navbar_menu nav ul li {
+		padding: 11px 10px;
+		width:100%;
+		margin-bottom: 1px;
+		background: #aaaaaa4a;
+	}
+	#top_navbar .navbar_menu nav ul li a i.fa-angle-double-down {
+		float: right;
+	}
+	
+/* ============ 1.1.Horizontzal Nav Reponsive Toggle Icon
+============================================================ */
+	#top_navbar .navbar_menu .menu-toggle{
+		display: block;
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		right: 8px;
+		top: 8px;
+		cursor: pointer;
+	}
+	#top_navbar .navbar_menu .menu-toggle span{
+		width: 30px;
+		height: 3px;
+		background: #fff;
+		display: block;
+		margin: 9px;
+	}
+	#top_navbar .navbar_menu nav ul li span i.fa-angle-double-down{
+		float:right;
+	}
+/* ============= Drop Down
+========================================== */
+	#top_navbar .navbar_menu nav ul li .dd-menu{
+		position:relative;
+		width: 80px;
+		top: 13px;
+		left:0px;
+		width: 100%;
+		display:none;
+	}
+	#top_navbar .navbar_menu nav ul li:hover .dd-menu{
+		width: 80px;
+		top: 13px;
+		left:0px;
+		width: 100%;
+	}
+	#top_navbar .navbar_menu nav ul li .dd-menu li{
+		
+	}
+	#top_navbar .navbar_menu nav ul li .dd-menu li a{
+		text-align: center;
+	}
+	#top_navbar .navbar_menu nav ul li .dd-menu li:hover{
+		
+	}
+	#top_navbar .navbar_menu nav ul li:hover span i.fa-angle-double-down{
+		pointer-events:none;
+	}
+	.fa-angle-double-down-color{
+		color:red;
+	}
+/* ====================================== 2.Home
+===========================================================	 */	
+	#home {
+		height: 100vh;
+	}
+/* ===================================== 2.1.Home Sidebar
+============================================================  */
+	#home .left_sidebar {
+		width: 50px;
+	}
+	#home.collapse .left_sidebar {
+		width: 200px;
+	}
+	
+	#home .left_sidebar .hide_sidebar .sidebar_icon {
+		position: relative;
+		top: 15px;
+		left: 9px;
+		cursor: pointer;
+		width: 30px;
+		height: 30px;
+	}
+/* ================================= 2.1.1.Side Nav Bar Logo
+============================================================ */
+	#home .left_sidebar .open_sidebar .logo_circle i {
+		font-size: 14px;
+	}
+	#home .left_sidebar .open_sidebar .sidebar_header a {
+		font-size: 24px;
+	}
+	#home .left_sidebar .open_sidebar .sidebar_header {
+		padding-top: 15px;
+		padding-bottom: 23px;
+	}
+	#home .left_sidebar .open_sidebar .sidebar_header .logo_circle {
+		padding-bottom: 20px;
+	}
+
+/* =============================== 2.2.Home Body(Content)
+========================================================== */
+	#home .home_page {
+		width: calc(100% - 50px);
+	}
+	#home.collapse .home_page {
+		width: calc(100% - 200px);
+	}
+/* 1st Item */
+	#home .home_page .home_content {
+		background-size: 97% 88%;
+		background-position: 60px 85px;
+	}
+	#home .home_page .home_content .home_body_content {
+		width: 40%;
+	}
+	#home .home_page .home_content .home_body_content h2 {
+		font-size: 32px;
+	}
+	#home .home_page .home_content .home_body_content p {
+		font-size: 18px;
+	}
+	#home .home_page .home_content .home_body_content a {
+		font-size: 18px;
+	}
+/* 2nd Item */
+	#home .home_page .home_content1 {
+		background-size: 121% 88%;
+		background-position:-50px 85px;
+	}
+	#home .home_page .home_content1 .home_body_content {
+		width: 40%;
+	}
+	#home .home_page .home_content1 .home_body_content h2 {
+		font-size: 32px;
+	}
+	#home .home_page .home_content1 .home_body_content p {
+		font-size: 18px;
+	}
+	#home .home_page .home_content1 .home_body_content a {
+		font-size: 18px;
+	}
+/* 3rd Item */
+	#home .home_page .home_content2 {
+		background-size: 87% 88%;
+		background-position: 130px 85px;
+	}
+	#home .home_page .home_content2 .home_body_content {
+		width: 40%;
+	}
+	#home .home_page .home_content2 .home_body_content h2 {
+		font-size: 32px;
+	}
+	#home .home_page .home_content2 .home_body_content p {
+		font-size: 18px;
+	}
+	#home .home_page .home_content2 .home_body_content a {
+		font-size: 18px;
+	}
+/* ---------index-1--------- */
+	#home .home_page .banner .banner_content_bg .home_body_content h2 {
+		font-size: 35px;
+	}
+	#home .home_page .banner .banner_content_bg .home_body_content p {
+		font-size: 16px;
+	}
+	#home .home_page .banner .banner_content_bg .home_body_content a {
+		font-size: 17px;
+	}
+/* ================ 2.1.2.When Nav Hide then what area I see
+============================================================ */
+	#home .left_sidebar .hide_sidebar .sidebar_logo {
+		font-size: 24px;
+		padding-bottom: 7px;
+	}
+	#home .left_sidebar .hide_sidebar .sidebar_icon {
+		left: 9px;
+	}
+/* ===============================2.1.2.Side Nav Bar Aera
+=========================================================== */
+	#home .left_sidebar .open_sidebar nav ul li {
+		padding: 17px 0;
+	}
+	#home .left_sidebar .open_sidebar nav ul li a {
+		text-decoration: none;
+		color: whitesmoke;
+		font-size: 11px;
+		display: block;
+		font-weight: 900;
+		text-transform: uppercase;
+	}
+	#home .left_sidebar .open_sidebar nav ul li a i {
+		font-size: 15px;
+	}
+	
+/* ============================= 2.3.Scroll To Continue
+========================================================== */
+#scroll-to-continue .scroll-btn{
+	display:none;
+}
+/* ===========================================3.About Us
+============================================================ */
+	#about {
+		padding: 60px 0px;
+	}
+/* ================================ 3.1.About Header
+============================================================ */
+	#about {
+		height: auto;
+	}
+	#about .about_h2 h2 {
+		font-size: 26px;
+	}
+	#about .about_h2 {
+		height: 65px;
+	}
+/* ================================= 3.2.About Content
+============================================================= */
+	#about .about_content {
+		text-align: center;
+	}
+	#about .about_content a {
+		color: #666666;
+		font-size: 13px;
+	}
+	#about .about_content p {
+		font-size: 12.5px;
+	}
+/* =================================== 4.Works
+============================================================ */
+	#works{
+		padding: 60px 0px;
+	}
+/* ================================== 4.1.Works Header
+============================================================= */
+	#works .works_h2 h2 {
+		font-size: 26px;
+	}
+/* ===================== 4.2.Works Content (Isotope Plugin)
+============================================================ */
+	#works .isotope-menu {
+		padding: 30px 0;
+	}
+	#works .isotope-menu > span {
+		font-size: 11px;
+	}
+	#works .filter-area .filter-item .p_img {
+		margin: 0 auto;
+		width: 90%;
+		margin-bottom: 30px;
+	}
+	#works .filter-area .filter-item .p_img .filter-item-content h4 {
+		font-size: 15px;
+	}
+	#works .filter-area .filter-item .p_img .filter-item-content p {
+		font-size: 11px;
+	}
+	#works .filter-area .filter-item .p_img .filter-item-content img {
+		width: 95%;
+	}
+	#works .filter-area .filter-item .p_img img {
+		width: 100%;
+		height: auto;
+	}
+/* ================================= 4.3.Works Footer
+============================================================ */
+	#works .work-footer a {
+		font-size: 13px;
+	}
+/* ================================= 5.Features
+=========================================================== */
+	#features {
+		padding:60px 0px;
+	}
+/* ================================= 5.1.Features Header
+============================================================ */
+	#features .features_h2 h2 {
+		font-size: 26px;
+	}
+	#features .features_h2{
+		height:65px;
+	}
+/* =============================== 5.2.Features Content area
+============================================================= */
+	#features .features-content {
+		width: auto;
+		text-align: center;
+	}
+	#features .features-content .features-content-img img {
+		width: 125px;
+		height: 125px;
+	}
+	#features .features-content .features-content-text {
+		padding-left: 0px;
+		padding-top: 0px;
+	}
+	#features .features-content .features-content-text h2 {
+		font-size: 14px;
+		margin-top: 25px;
+	}
+	#features .features-content .features-content-text span {
+		font-size: 12px;
+	}
+	#features .features-content .features-content-text p {
+		font-size: 12px;
+		padding-right: 0px;
+	}
+/* ====================================6.Achivement
+========================================================== */
+	#achivement{
+		padding:60px 0px;
+	}
+/* ============================== 6.1.Achivement Text Area
+============================================================ */
+	#achivement .achivement-text {
+		margin-top: 0px;
+	}
+	#achivement .achivement-text h2 {
+		font-size: 36px;
+	}
+	#achivement .achivement-text p {
+		font-size: 13px;
+	}
+	#achivement .achivement-text .achivement-btn {
+		padding-top: 10px;
+	}
+	#achivement .achivement-text .achivement-btn a {
+		font-size: 14px;
+	}
+	#achivement img{
+		width: 200px;
+		height: 420px;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+/* ============================================7.Counter
+========================================================= */
+	#counter{
+		padding:60px 0px;
+	}
+/* =====================================7.1.Counter Body 
+============================================================ */
+	#counter .counter-content {
+		justify-content: center;
+	}
+	#counter .counter-content .counter-content-img1{
+		width: 57px;
+		height: 90px;
+		margin-left: -34px;
+	}
+	#counter .counter-content .counter-content-img2{
+		width: 57px;
+		height: 68px;
+		margin-top: 13px;
+	}
+	#counter .counter-content .counter-content-img3{
+		width: 62px;
+		height: 62px;
+		margin-top: 18px;
+	}
+	#counter .counter-content .counter-content-img4{
+		width: 42px;
+		height: 70px;
+		margin-top: 10px;
+	}
+	#counter .counter-content .counter-text span {
+		font-size: 18px;
+	}
+	#counter .counter-content .counter-text p {
+		font-size: 15px;
+	}
+/* ===================================8.Our Team
+================================================== */
+	#team{
+		padding:60px 0px;
+	}
+/* =====================================8.1.Our Team Header
+============================================================= */
+	#team .team_h2 h2 {
+		font-size: 26px;
+	}
+	#team .team_h2{
+		height:65px;
+	}
+	#team .team_p p {
+		font-size: 11px;
+	}
+/* ================================== 8.2.Our Team Content
+=========================================================== */
+	#team .team-content {
+		width: 80%;
+		margin: 0 auto;
+		margin-bottom: 50px;
+	}
+	#team .team-content .team-content-text h2 {
+		font-size: 13px;
+	}
+	#team .team-content .team-content-text p {
+		font-size: 12px;
+	}
+/* =================================== 10.Our Skill
+========================================================== */
+#skill{
+	padding:60px 0px;
+}
+/* =================================== 10.1.Our Skill Header
+===========================================================	*/
+	#skill .skill_h2 h2 {
+		font-size: 26px;
+	}
+	#skill .skill_h2 {
+		height:65px;
+	}
+/* ================================= 10.2.Our Skill Content
+============================================================= */
+	#skill .skill-content {
+		width: 100%;
+		text-align: center;
+	}
+	#skill .skill-content .skill-content-text1 h2 {
+		font-size: 14px;
+	}
+	#skill .skill-content .skill-content-text1 span {
+		font-size: 12px;
+	}
+	#skill .skill-content .skill-content-text1 p {
+		font-size: 12px;
+	}
+/* ========================Our Skill Content Progress Bar
+============================================================ */
+	.skillbarcont {
+		justify-content: normal;
+		height: 230px;
+		margin: 0 auto;
+		margin-top: 34px;
+		padding-left: 0px;
+		width: auto;
+	}
+	.skillbar {
+		margin-left: 12px;
+	}
+	.filltip {
+		font-size: 16px;
+		text-align: left;
+	}
+/* =====================================11.Socail Platform
+===========================================================	*/
+	#socail-platform ul li:nth-child(1) {
+		background-size: 50% 20%;
+	}
+	#socail-platform ul li:nth-child(2) {
+		background-size: 50% 20%;
+	}
+	#socail-platform ul li:nth-child(3) {
+		background-size: 50% 20%;
+	}
+	#socail-platform ul li:nth-child(4) {
+		background-size: 50% 20%;
+	}
+	#socail-platform ul li:nth-child(5) {
+		background-size: 50% 20%;
+	}
+	#socail-platform ul li:nth-child(6) {
+		background-size: 50% 20%;
+	}
+	#socail-platform ul li {
+		width: 70px;
+		height: 47px;
+	}
+	#socail-platform ul {
+		height: 49px;
+	}
+/* =====================================12.1.Slider Body
+============================================================ */
+	.swiper-slide {
+		/* height: 350px; */
+	}
+	.swiper-slide .slide-content .slide-content-text-area {
+		max-width: 540px;
+		float: none;
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+	
+	.swiper-slide .slide-content .slide-content-text-area i {
+		font-size: 21px;
+		padding-right: 18px;
+	}
+	.swiper-slide .slide-content .slide-content-text-area .slide-content-text p {
+		font-size: 14px;
+	}
+	.swiper-slide .slide-content .slide-content-text-area .slide-content-text h5 {
+		font-size: 14px;
+	}
+	.swiper-slide .slide-content .slide-content-text-area .slide-content-text h6 {
+		font-size: 12px;
+	}
+	.swiper-slide .slide-content img {
+		width: 225px;
+		height: 275px;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.swiper-slide .slide-content img {
+		/* position: relative;
+		bottom: -250px; */
+	}
+/* ==================================== 13.Our News
+=========================================================*/
+	#news{
+		padding:60px 0px;
+	}
+/* ===================================== 13.1.Our News Header
+============================================================ */
+	#news .news_h2 h2 {
+		font-size: 21px;
+	}
+	#news .news_h2{
+		height:48px;
+	}
+	#news .news_p p {
+		font-size: 12px;
+	}
+/* ==================================== 13.2.Our News Body
+============================================================= */
+	#news .new-wrapper {
+		width: 100%;
+		text-align: center;
+	}
+	#news .new-wrapper .news-content {
+		padding-bottom: 60px;
+	}
+	#news .new-wrapper .news-content .news-content-text .news-content-text-header {
+		background-position: bottom center;
+	}
+	#news .new-wrapper .news-content .news-content-text .news-content-text-header h2 {
+		font-size: 14px;
+		margin-top:15px;
+	}
+	#news .new-wrapper .news-content .news-content-text .news-content-text-header a {
+		font-size: 12px;
+	}
+	#news .new-wrapper .news-content .news-content-text .news-content-text-body p {
+		font-size: 12px;
+	}
+	#news .new-wrapper .news-content .news-content-text .news-content-text-body .news-content-text-body-link a {
+		font-size: 12px;
+	}
+/* ==================================== 13.3.Our News Footer
+============================================================= */
+	#news .new-wrapper .news-footer a {
+		font-size: 14px;
+	}
+/* ====================================== 14.Form
+===================================================== */
+	#form{
+		padding:60px 0px;
+	}
+/* ===================================== 14.Form	 
+=========================================================== */
+	#form .form-wrapper {
+		width: 275px;
+		margin: 0 auto;
+	}
+	#form .form-wrapper h2 {
+		font-size: 21px;
+	}
+	#form .form-wrapper form .form-group label {
+		font-size: 15px;
+	}
+	#form .form-wrapper form input[type="submit"] {
+		font-size: 14px;
+		margin-left: 124px;
+	}
+/* 15.Contact Us */
+	#contact{
+		padding:60px 0px;
+	}
+/* ================================ 15.1.Contact Us Header
+============================================================ */
+	#contact .contact-h2 h2 {
+		font-size: 26px;
+	}
+	#contact .contact-h2{
+		height:65px;
+	}
+	#contact p {
+		font-size: 12px;
+	}
+/* ================================= 15.2.Contact Us Body
+============================================================= */
+		
+	#contact .contact-wrapper .contact-text i {
+		font-size: 21px;
+	}
+	#contact .contact-wrapper .contact-text h5 {
+		font-size: 12px;
+	}
+/* =================================  16.1.Footer Header
+============================================================= */
+	#footer{
+		padding:60px 0px;
+	}
+	#footer .footer-wrapper .footer-h2 h2 {
+		font-size: 24px;
+	}
+	#footer .footer-wrapper .footer-h2 {
+		height: 80px;
+	}
+/* =================================== 16.2.Footer Body
+============================================================ */
+	#footer .footer-wrapper .footer-content .footer-content-icon {
+		width: 28px;
+		height: 28px;
+	}
+/* =================================== 16.3.Footer Bottom
+=========================================================== */
+	#footer .footer-bottom span {
+		font-size: 13px;
+	}	
+	
+
+}
+
+
+
+
+/* ==================== (480px-320px) =======================
+===================[ iPhone & Smartphones ]====================
+============================================================= */
+/* iPhone 4 ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+	
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+	
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+/* ============ Nav Menu
+================================== */	
+	#top_navbar {
+		height: 50px;
+	}
+	#top_navbar .navbar_menu .navbar_logo {
+		padding: 5px 0;
+	}
+	#top_navbar .navbar_menu .navbar_logo a {
+		font-size: 24px;
+	}
+	#top_navbar .navbar_menu {
+	}
+	#top_navbar .navbar_menu nav {
+		background: #e9e9e9;
+		position: absolute;
+		top:70px;
+		left: -350px;
+		width: 40%;
+		transition:.3s ease;	
+	}
+	#top_navbar .navbar_menu nav.menu_p{
+		background: #000;
+		position: absolute;
+		top:50px;
+		left: 0px;
+		width: 40%;
+		max-height: 333px;
+		overflow-x: auto;
+		transition:.3s ease;
+	}
+	#top_navbar .navbar_menu nav ul{
+		margin-bottom:0px;
+	}
+	#top_navbar .navbar_menu nav ul li {
+		padding: 9px 10px;
+		padding-left: 25px;
+		width:100%;
+		margin-bottom: 1px;
+		background: #aaaaaa4a;
+	}
+	#top_navbar .navbar_menu nav ul li a i.fa-angle-double-down {
+		float: right;
+	}
+	
+/* ============ 1.1.Horizontzal Nav Reponsive Toggle Icon
+============================================================ */
+	#top_navbar .navbar_menu .menu-toggle{
+		display: block;
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		right: 0px;
+		top: 7px;
+		cursor: pointer;
+	}
+	#top_navbar .navbar_menu .menu-toggle span{
+		width: 26px;
+		height: 3px;
+		background: #fff;
+		display: block;
+		margin: 7px;
+	}
+	#top_navbar .navbar_menu nav ul li span i.fa-angle-double-down{
+		float:right;
+	}
+/* ============= Drop Down
+========================================== */
+	#top_navbar .navbar_menu nav ul li .dd-menu{
+		position:relative;
+		width: 80px;
+		top: 13px;
+		left:0px;
+		width: 100%;
+		display:none;
+	}
+	#top_navbar .navbar_menu nav ul li:hover .dd-menu{
+		width: 80px;
+		top: 13px;
+		left:0px;
+		width: 100%;
+	}
+	#top_navbar .navbar_menu nav ul li .dd-menu li{
+		
+	}
+	#top_navbar .navbar_menu nav ul li .dd-menu li a{
+		    text-align: center;
+	}
+	#top_navbar .navbar_menu nav ul li .dd-menu li:hover{
+		
+	}
+	#top_navbar .navbar_menu nav ul li:hover span i.fa-angle-double-down{
+		pointer-events:none;
+	}
+	.fa-angle-double-down-color{
+		color:red;
+	}
+/* ====================================== 2.Home
+===========================================================	 */	
+	#home {
+		height: 60vh;
+	}
+/* ===================================== 2.1.Home Sidebar
+============================================================  */
+	#home .left_sidebar {
+		width: 35px;
+	}
+	#home.collapse .left_sidebar {
+		width: 135px;
+	}
+	#home .left_sidebar .open_sidebar {
+		width: 100px;
+	}
+	#home .left_sidebar .hide_sidebar .sidebar_icon {
+		position: relative;
+		top: 15px;
+		left: 9px;
+		cursor: pointer;
+		width: 30px;
+		height: 30px;
+	}
+/* ================================= 2.1.1.Side Nav Bar Logo
+============================================================ */
+	#home .left_sidebar .open_sidebar .logo_circle i {
+		font-size: 14px;
+	}
+	#home .left_sidebar .open_sidebar .sidebar_header a {
+		font-size: 24px;
+	}
+	#home .left_sidebar .open_sidebar .sidebar_header {
+		padding-top: 10px;
+		padding-left: 10px;
+		padding-bottom: 10px;
+	}
+	#home .left_sidebar .open_sidebar .sidebar_header .logo_circle {
+		padding-bottom: 2px;
+	}
+/* ============================== 2.1.2.Side Nav Bar Aera
+========================================================== */
+	#home .left_sidebar .open_sidebar nav {
+		padding-left: 10px;
+		padding-top: 15px;
+		padding-bottom: 11px;
+	}
+	#home .left_sidebar .open_sidebar nav ul li {
+		padding: 6px 0;
+	}
+	#home .left_sidebar .open_sidebar nav ul li a i.fa-angle-double-down {
+		font-size: 8px;
+		margin-top: 4px;
+	}
+	#home .left_sidebar .open_sidebar nav ul li .sidebar-dd-menu li {
+		padding-left: 0;
+		text-align: center;
+	}
+
+/* =============================== 2.2.Home Body(Content)
+========================================================== */
+	#home .home_page {
+		width: calc(100% - 30px);
+	}
+	#home.collapse .home_page {
+		width: calc(100% - 125px);
+	}
+/* 1st Item */
+	#home .home_page .home_content {
+		background-size: 111% 90%;
+		background-position: 14px 40px;
+	}
+	#home .home_page .home_content .home_body_content {
+		width: 50%;
+	}
+	#home .home_page .home_content .home_body_content h2 {
+		font-size: 23px;
+	}
+	#home .home_page .home_content .home_body_content p {
+		font-size: 16px;
+	}
+	#home .home_page .home_content .home_body_content a {
+		font-size: 16px;
+	}
+/* 2nd Item */
+	#home .home_page .home_content1 {
+		background-size: 111% 90%;
+		background-position: 14px 40px;
+	}
+	#home .home_page .home_content1 .home_body_content {
+		width: 50%;
+	}
+	#home .home_page .home_content1 .home_body_content h2 {
+		font-size: 23px;
+	}
+	#home .home_page .home_content1 .home_body_content p {
+		font-size: 16px;
+	}
+	#home .home_page .home_content1 .home_body_content a {
+		font-size: 16px;
+	}
+/* 3rd Item */
+	#home .home_page .home_content2 {
+		background-size: 111% 90%;
+		background-position: 14px 40px;
+	}
+	#home .home_page .home_content2 .home_body_content {
+		width: 50%;
+	}
+	#home .home_page .home_content2 .home_body_content h2 {
+		font-size: 23px;
+	}
+	#home .home_page .home_content2 .home_body_content p {
+		font-size: 16px;
+	}
+	#home .home_page .home_content2 .home_body_content a {
+		font-size: 16px;
+	}
+/* ---------index-1--------- */
+	#home .home_page .banner .banner_content_bg .home_body_content h2 {
+		font-size: 24px;
+	}
+	#home .home_page .banner .banner_content_bg .home_body_content p {
+		font-size: 17px;
+	}
+	#home .home_page .banner .banner_content_bg .home_body_content a {
+		font-size: 15px;
+	}
+/* ---------index-2--------- */	
+	.owl-carousel .item {
+		height: 60vh;
+	}
+	.owl-theme .owl-dots .owl-dot span {
+		padding: 0px 6px;
+	}
+/* ================ 2.1.2.When Nav Hide then what area I see
+============================================================ */
+	#home.collapse .left_sidebar .hide_sidebar {
+		width: calc(135px - 100px);
+	}
+	#home .left_sidebar .hide_sidebar .sidebar_logo {
+		top: 40%;
+		font-size: 20px;
+		padding-bottom: 31px;
+	}
+	#home .left_sidebar .hide_sidebar .sidebar_icon {
+		left: 7px;
+	}
+	#home .left_sidebar .hide_sidebar .sidebar_icon span {
+		width: 21px;
+		margin: 5px 0;
+	}
+	
+/* ===============================2.1.2.Side Nav Bar Aera
+=========================================================== */
+	#home .left_sidebar .open_sidebar nav ul li a {
+		text-decoration: none;
+		color: whitesmoke;
+		font-size: 11px;
+		display: block;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+	#home .left_sidebar .open_sidebar nav ul li a i {
+		font-size: 12px;
+		width: 20px;
+	}
+/* ===========================================3.About Us
+============================================================ */
+	#about {
+		padding: 60px 0px;
+	}
+/* ================================ 3.1.About Header
+============================================================ */
+	#about {
+		height: auto;
+	}
+	#about .about_h2 h2 {
+		font-size: 21px;
+	}
+	#about .about_h2 {
+		height: 48px;
+	}
+/* ================================= 3.2.About Content
+============================================================= */
+	#about .about_content {
+		text-align: center;
+		padding-top: 30px;
+	}
+	#about .about_content a {
+		color: #666666;
+		font-size: 13px;
+	}
+	#about .about_content p {
+		font-size: 12.5px;
+	}
+/* =================================== 4.Works
+============================================================ */
+	#works{
+		padding: 60px 0px;
+	}
+/* ================================== 4.1.Works Header
+============================================================= */
+	#works .works_h2 h2 {
+		font-size: 21px;
+	}
+/* ===================== 4.2.Works Content (Isotope Plugin)
+============================================================ */
+	#works .isotope-menu {
+		padding: 30px 0;
+	}
+	#works .isotope-menu > span {
+		font-size: 12px;
+		display: block;
+		padding-top: 5px;
+		margin-right: 0;
+	}
+	#works .filter-area .filter-item .p_img {
+		margin: 0 auto;
+		width: 90%;
+		margin-bottom: 30px;
+	}
+	#works .filter-area .filter-item .p_img .filter-item-content h4 {
+		font-size: 15px;
+	}
+	#works .filter-area .filter-item .p_img .filter-item-content p {
+		font-size: 13px;
+	}
+	#works .filter-area .filter-item .p_img .filter-item-content img {
+		width: 95%;
+	}
+	#works .filter-area .filter-item .p_img img {
+		width: 100%;
+		height: auto;
+	}
+/* ================================= 4.3.Works Footer
+============================================================ */
+	#works .work-footer a {
+		font-size: 13px;
+	}
+/* ================================= 5.Features
+=========================================================== */
+	#features {
+		padding:60px 0px;
+	}
+/* ================================= 5.1.Features Header
+============================================================ */
+	#features .features_h2 h2 {
+		font-size: 21px;
+	}
+	#features .features_h2{
+		height:48px;
+	}
+/* =============================== 5.2.Features Content area
+============================================================= */
+	#features .features-content {
+		width: auto;
+		text-align: center;
+	}
+	#features .features-content .features-content-img img {
+		width: 115px;
+		height: 115px;
+	}
+	#features .features-content .features-content-text {
+		padding-left: 0px;
+		padding-top: 0px;
+	}
+	#features .features-content .features-content-text h2 {
+		font-size: 14px;
+		margin-top: 25px;
+	}
+	#features .features-content .features-content-text span {
+		font-size: 12px;
+	}
+	#features .features-content .features-content-text p {
+		font-size: 12px;
+		padding-right: 0px;
+	}
+/* ====================================6.Achivement
+========================================================== */
+	#achivement{
+		padding:60px 0px;
+	}
+/* ============================== 6.1.Achivement Text Area
+============================================================ */
+	#achivement .achivement-text {
+		margin-top: 0px;
+	}
+	#achivement .achivement-text h2 {
+		font-size: 30px;
+	}
+	#achivement .achivement-text p {
+		font-size: 13px;
+	}
+	#achivement .achivement-text .achivement-btn {
+		padding-top: 10px;
+	}
+	#achivement .achivement-text .achivement-btn a {
+		font-size: 14px;
+	}
+	#achivement img{
+		width: 135px;
+		height: 270px;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+/* ============================================7.Counter
+========================================================= */
+	#counter{
+		padding:60px 0px;
+	}
+/* =====================================7.1.Counter Body 
+============================================================ */
+	#counter .counter-content {
+		justify-content: center;
+	}
+	#counter .counter-content .counter-content-img1{
+		width: 57px;
+		height: 90px;
+		margin-left: -34px;
+	}
+	#counter .counter-content .counter-content-img2{
+		width: 57px;
+		height: 68px;
+		margin-top: 13px;
+	}
+	#counter .counter-content .counter-content-img3{
+		width: 62px;
+		height: 62px;
+		margin-top: 18px;
+	}
+	#counter .counter-content .counter-content-img4{
+		width: 42px;
+		height: 70px;
+		margin-top: 10px;
+	}
+	#counter .counter-content .counter-text span {
+		font-size: 18px;
+	}
+	#counter .counter-content .counter-text p {
+		font-size: 15px;
+	}
+/* ===================================8.Our Team
+================================================== */
+	#team{
+		padding:60px 0px;
+	}
+/* =====================================8.1.Our Team Header
+============================================================= */
+	#team .team_h2 h2 {
+		font-size: 21px;
+	}
+	#team .team_h2{
+		height:48px;
+	}
+	#team .team_p p {
+		font-size: 12px;
+	}
+/* ================================== 8.2.Our Team Content
+=========================================================== */
+	#team .team-content {
+		width: 80%;
+		margin: 0 auto;
+		margin-bottom: 50px;
+	}
+	#team .team-content .team-content-text h2 {
+		font-size: 13px;
+	}
+	#team .team-content .team-content-text p {
+		font-size: 12px;
+	}
+/* ==================================== 9.Video	
+========================================================= */
+	.my-video-dimensions {
+		height: 80vh;
+	}
+/* =================================== 10.Our Skill
+========================================================== */
+#skill{
+	padding:60px 0px;
+}
+/* =================================== 10.1.Our Skill Header
+===========================================================	*/
+	#skill .skill_h2 h2 {
+		font-size: 21px;
+	}
+	#skill .skill_h2 {
+		height:48px;
+	}
+/* ================================= 10.2.Our Skill Content
+============================================================= */
+	#skill .skill-content {
+		width: 100%;
+		text-align: center;
+	}
+	#skill .skill-content .skill-content-text1 h2 {
+		font-size: 14px;
+	}
+	#skill .skill-content .skill-content-text1 span {
+		font-size: 12px;
+	}
+	#skill .skill-content .skill-content-text1 p {
+		font-size: 12px;
+	}
+/* ========================Our Skill Content Progress Bar
+============================================================ */
+	.skillbarcont {
+		justify-content: center;
+		padding-left: 0;
+		height: 170px;
+		margin-top: 30px;
+	}
+	.skillbar {
+		margin-left: 12px;
+		width: 22px;
+	}
+	.filltip {
+		font-size: 13px;
+		top: calc(100% - 115px);
+		right: -89px;
+		text-align: left;
+	}
+/* =====================================11.Socail Platform
+===========================================================	*/
+	#socail-platform ul li:nth-child(1) {
+		background-size: 85% 40%;
+	}
+	#socail-platform ul li:nth-child(2) {
+		background-size: 85% 60%;
+	}
+	#socail-platform ul li:nth-child(3) {
+		background-size: 85% 40%;
+	}
+	#socail-platform ul li:nth-child(4) {
+		background-size: 85% 40%;
+	}
+	#socail-platform ul li:nth-child(5) {
+		background-size: 85% 30%;
+	}
+	#socail-platform ul li:nth-child(6) {
+		background-size: 85% 40%;
+	}
+	#socail-platform ul li {
+		width: 47px;
+		height: 39px;
+	}
+	#socail-platform ul {
+		height: 41px;
+	}
+/* =====================================12.1.Slider Body
+============================================================ */
+	.swiper-slide {
+		min-height: 650px;
+	}
+	.swiper-slide .slide-content .slide-content-text-area {
+		max-width: 540px;
+		float: none;
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+	
+	.swiper-slide .slide-content .slide-content-text-area i {
+		font-size: 21px;
+		padding-right: 18px;
+	}
+	.swiper-slide .slide-content .slide-content-text-area .slide-content-text p {
+		font-size: 14px;
+	}
+	.swiper-slide .slide-content .slide-content-text-area .slide-content-text h5 {
+		font-size: 14px;
+	}
+	.swiper-slide .slide-content .slide-content-text-area .slide-content-text h6 {
+		font-size: 12px;
+	}
+	.swiper-slide .slide-content img {
+		width: 225px;
+		height: 275px;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	.swiper-slide .slide-content img {
+		/* position: absolute;
+		bottom: 0px;
+		top: 43px;
+		left: 50%; */
+	}
+/* ==================================== 13.Our News
+=========================================================*/
+	#news{
+		padding:60px 0px;
+	}
+/* ===================================== 13.1.Our News Header
+============================================================ */
+	#news .news_h2 h2 {
+		font-size: 21px;
+	}
+	#news .news_h2{
+		height:48px;
+	}
+	#news .news_p p {
+		font-size: 12px;
+	}
+/* ==================================== 13.2.Our News Body
+============================================================= */
+	#news .new-wrapper {
+		width: 100%;
+		text-align: center;
+	}
+	#news .new-wrapper .news-content {
+		padding-bottom: 60px;
+	}
+	#news .new-wrapper .news-content .news-content-text .news-content-text-header {
+		background-position: bottom center;
+	}
+	#news .new-wrapper .news-content .news-content-text .news-content-text-header h2 {
+		font-size: 14px;
+		margin-top:15px;
+	}
+	#news .new-wrapper .news-content .news-content-text .news-content-text-header a {
+		font-size: 12px;
+	}
+	#news .new-wrapper .news-content .news-content-text .news-content-text-body p {
+		font-size: 12px;
+	}
+	#news .new-wrapper .news-content .news-content-text .news-content-text-body .news-content-text-body-link a {
+		font-size: 12px;
+	}
+/* ==================================== 13.3.Our News Footer
+============================================================= */
+	#news .new-wrapper .news-footer a {
+		font-size: 14px;
+	}
+/* ====================================== 14.Form
+===================================================== */
+	#form{
+		padding:60px 0px;
+	}
+/* ===================================== 14.Form	 
+=========================================================== */
+	#form .form-wrapper {
+		width: 235px;
+		margin: 0 auto;
+	}
+	#form .form-wrapper h2 {
+		font-size: 21px;
+	}
+	#form .form-wrapper form .form-group label {
+		font-size: 14px;
+	}
+	#form .form-wrapper form input[type="submit"] {
+		font-size: 14px;
+		margin-left: 103px;
+	}
+/* 15.Contact Us */
+	#contact{
+		padding:60px 0px;
+	}
+/* ================================ 15.1.Contact Us Header
+============================================================ */
+	#contact .contact-h2 h2 {
+		font-size: 21px;
+	}
+	#contact .contact-h2{
+		height:48px;
+	}
+	#contact p {
+		font-size: 12px;
+	}
+/* ================================= 15.2.Contact Us Body
+============================================================= */
+		
+	#contact .contact-wrapper .contact-text i {
+		font-size: 21px;
+	}
+	#contact .contact-wrapper .contact-text h5 {
+		font-size: 12px;
+	}
+/* =================================  16.1.Footer Header
+============================================================= */
+	#footer{
+		padding:60px 0;
+	}
+	#footer .footer-wrapper .footer-h2 h2 {
+		font-size: 24px;
+	}
+	#footer .footer-wrapper .footer-h2 {
+		height: 80px;
+	}
+/* =================================== 16.2.Footer Body
+============================================================ */
+	#footer .footer-wrapper .footer-content {
+		/* justify-content: center; */
+	}
+	#footer .footer-wrapper .footer-content .footer-content-icon {
+		width: 28px;
+		height: 28px;
+	}
+/* =================================== 16.3.Footer Bottom
+=========================================================== */
+	#footer .footer-bottom span {
+		font-size: 13px;
+	}	
+}
+
+
+
+/* ==========================================================
+===================[ Smartphones (320px) ]=====================
+============================================================= */
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+/* ============ Nav Menu
+================================== */	
+	#top_navbar {
+		height: 40px;
+	}
+	#top_navbar .navbar_menu .navbar_logo {
+		padding: 0px 0;
+	}
+	#top_navbar .navbar_menu .navbar_logo a {
+		font-size: 24px;
+	}
+	#top_navbar .navbar_menu {
+	}
+	#top_navbar .navbar_menu nav {
+		background: #e9e9e9;
+		position: absolute;
+		top:65px;
+		left: -350px;
+		width: 40%;
+		transition:.3s ease;	
+	}
+	#top_navbar .navbar_menu nav.menu_p{
+		background: #000;
+		position: absolute;
+		top:40px;
+		left: 0px;
+		width: 64%;
+		max-height: 288px;
+		overflow-x: auto;
+		transition:.3s ease;
+	}
+	#top_navbar .navbar_menu nav ul{
+		margin-bottom:0px;
+	}
+	#top_navbar .navbar_menu nav ul li {
+		padding: 8px 10px;
+		padding-left: 16px;
+		width:100%;
+		margin-bottom: 1px;
+		background: #aaaaaa4a;
+	}
+	#top_navbar .navbar_menu nav ul li a i.fa-angle-double-down {
+		float: right;
+	}
+	
+/* ============ 1.1.Horizontzal Nav Reponsive Toggle Icon
+============================================================ */
+	#top_navbar .navbar_menu .menu-toggle{
+		display: block;
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		right: -4px;
+		top: 7px;
+		cursor: pointer;
+	}
+	#top_navbar .navbar_menu .menu-toggle span{
+		width: 23px;
+		margin: 5px 7px;
+		background:#fff;
+	}
+	#top_navbar .navbar_menu nav ul li span i.fa-angle-double-down{
+		float:right;
+	}
+	#top_navbar .navbar_menu nav ul li {
+		font-size: 10px;
+	}
+/* ============= Drop Down
+========================================== */
+	#top_navbar .navbar_menu nav ul li .dd-menu{
+		position:relative;
+		width: 80px;
+		top: 9px;
+		left:0px;
+		width: 100%;
+		display:none;
+	}
+	#top_navbar .navbar_menu nav ul li:hover .dd-menu{
+		width: 80px;
+		top: 13px;
+		left:0px;
+		width: 100%;
+	}
+	#top_navbar .navbar_menu nav ul li .dd-menu li{
+		
+	}
+	#top_navbar .navbar_menu nav ul li .dd-menu li a{
+		text-align: center;
+	}
+	#top_navbar .navbar_menu nav ul li .dd-menu li:hover{
+		
+	}
+	#top_navbar .navbar_menu nav ul li:hover span i.fa-angle-double-down{
+		pointer-events:none;
+	}
+	.fa-angle-double-down-color{
+		color:red;
+	}
+/* ====================================== 2.Home
+===========================================================	 */	
+	#home {
+		height: 60vh;
+	}
+/* ===================================== 2.1.Home Sidebar
+============================================================  */
+	#home .left_sidebar {
+		width: 30px;
+	}
+	#home.collapse .left_sidebar {
+		width: 110px;
+	}
+	
+	#home .left_sidebar .hide_sidebar .sidebar_icon {
+		position: relative;
+		top: 15px;
+		left: 9px;
+		cursor: pointer;
+		width: 30px;
+		height: 30px;
+	}
+	#home .left_sidebar .open_sidebar {
+		width: 80px;
+	}
+/* ================================= 2.1.1.Side Nav Bar Logo
+============================================================ */
+	#home .left_sidebar .open_sidebar .logo_circle i {
+		font-size: 14px;
+	}
+	#home .left_sidebar .open_sidebar .sidebar_header a {
+		font-size: 24px;
+	}
+	#home .left_sidebar .open_sidebar .sidebar_header {
+		display: none;
+	}
+	#home .left_sidebar .open_sidebar .sidebar_header .logo_circle {
+		padding-bottom: 2px;
+	}
+
+/* =============================== 2.2.Home Body(Content)
+========================================================== */
+	#home .home_page {
+		width: calc(100% - 30px);
+	}
+	#home.collapse .home_page {
+		width: calc(100% - 110px);
+	}
+/* 1st Item */
+	#home .home_page .home_content {
+		background-size: 152% 102%;
+		background-position: -114px -4px;
+		transition:all .3s ease;
+	}
+	#home .home_page .home_content .home_body_content {
+		
+		width: 92%;
+		text-align: center;
+		background: #02020247;
+		padding: 2px 10px;
+		/* background-size: 800px 622px; */
+		margin-top: 10px;
+		margin-left: -8px;
+		
+	}
+	#home .home_page .home_content .home_body_content h2 {
+		font-size: 18px;
+		color:#fff;
+		margin-bottom: 0;
+	}
+	
+	#home .home_page .home_content .home_body_content p {
+		font-size: 14px;
+		color:#fff;
+		margin-bottom: 0;
+	}
+	#home .home_page .home_content .home_body_content a {
+		font-size: 15px;
+		color:#fff;
+		border-bottom: 2px solid #fff;
+	}
+/* 2nd Item */
+	#home .home_page .home_content1 {
+		background-size: 152% 102%;
+		background-position: -114px -4px;
+		transition:all .3s ease;
+	}
+	#home .home_page .home_content1 .home_body_content {
+		
+		width: 92%;
+		text-align: center;
+		background: #02020247;
+		padding: 2px 10px;
+		/* background-size: 800px 622px; */
+		margin-top: 10px;
+		margin-left: -8px;
+		
+	}
+	#home .home_page .home_content1 .home_body_content h2 {
+		font-size: 18px;
+		color:#fff;
+		margin-bottom: 0;
+	}
+	
+	#home .home_page .home_content1 .home_body_content p {
+		font-size: 14px;
+		color:#fff;
+		margin-bottom: 0;
+	}
+	#home .home_page .home_content1 .home_body_content a {
+		font-size: 15px;
+		color:#fff;
+		border-bottom: 2px solid #fff;
+	}
+/* 3rd Item */
+	#home .home_page .home_content2 {
+		background-size: 152% 102%;
+		background-position: -114px -4px;
+		transition:all .3s ease;
+	}
+	#home .home_page .home_content2 .home_body_content {
+		
+		width: 92%;
+		text-align: center;
+		background: #02020247;
+		padding: 2px 10px;
+		/* background-size: 800px 622px; */
+		margin-top: 10px;
+		margin-left: -8px;
+		
+	}
+	#home .home_page .home_content2 .home_body_content h2 {
+		font-size: 18px;
+		color:#fff;
+		margin-bottom: 0;
+	}
+	
+	#home .home_page .home_content2 .home_body_content p {
+		font-size: 14px;
+		color:#fff;
+		margin-bottom: 0;
+	}
+	#home .home_page .home_content2 .home_body_content a {
+		font-size: 15px;
+		color:#fff;
+		border-bottom: 2px solid #fff;
+	}
+/* ---------index-1--------- */
+	#home .home_page .banner .banner_content_bg .home_body_content h2 {
+		font-size: 24px;
+	}
+	#home .home_page .banner .banner_content_bg .home_body_content p {
+		font-size: 15px;
+	}
+	#home .home_page .banner .banner_content_bg .home_body_content a {
+		font-size: 15px;
+	}	
+/* ================When collapse add============= */
+	#home.collapse .home_page .home_content{
+		background-position: -83px 1px;
+	}
+/* ---------index-2--------- */
+	.owl-carousel .item {
+		height: 60vh;
+	}
+	.owl-theme .owl-nav {
+		bottom: 16px;
+		font-size: 24px;
+		width: 100%;
+	}
+	.owl-theme .owl-dots .owl-dot span {
+		padding: 0 0px;
+	}
+	.owl-theme .owl-nav .owl-prev span, .owl-theme .owl-nav .owl-next span {
+		color: #fff;
+	}
+	#home .home_page .owl-carousel .home_content .home_body_content h2 {
+		color:#fff;
+	}
+	.owl-theme .owl-nav .owl-prev span{
+		position: absolute;
+		left: 0;
+		bottom: 0;
+	}
+	.owl-theme .owl-nav .owl-next span {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+	}
+/* ================ 2.1.2.When Nav Hide then what area I see
+============================================================ */
+	#home.collapse .left_sidebar .hide_sidebar {
+		width: calc(110px - 80px);
+	}
+	#home .left_sidebar .hide_sidebar .sidebar_logo {
+		top: 45%;
+		font-size: 20px;
+		padding-bottom: 20px;
+	}
+	#home .left_sidebar .hide_sidebar .sidebar_logo img {
+		width: 50px;
+	}
+	#home .left_sidebar .hide_sidebar .sidebar_icon {
+		left: 5px;
+	}
+	#home .left_sidebar .hide_sidebar .sidebar_icon span {
+		width: 21px;
+		margin: 5px 0;
+	}
+/* ===============================2.1.2.Side Nav Bar Aera
+=========================================================== */
+	#home .left_sidebar .open_sidebar nav {
+		padding-left: 10px;
+		padding-top: 50px;
+		padding-bottom: 11px;
+	}
+		#home .left_sidebar .open_sidebar nav ul li {
+		padding: 6px 0;
+	}
+	#home .left_sidebar .open_sidebar nav ul li a {
+		text-decoration: none;
+		color: whitesmoke;
+		font-size: 11px;
+		display: block;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+	#home .left_sidebar .open_sidebar nav ul li a i.fa-angle-double-down{
+		display: block;
+		font-size: 10px;
+		margin-top: 3px;
+		padding-left: 6px;
+	}
+	#home .left_sidebar .open_sidebar nav ul li a i {
+		display: none;
+	}
+/* ===========================================3.About Us
+============================================================ */
+	#about {
+		padding: 60px 0px;
+	}
+/* ================================ 3.1.About Header
+============================================================ */
+	#about {
+		height: auto;
+	}
+	#about .about_h2 h2 {
+		font-size: 18px;
+	}
+	#about .about_h2 {
+		height: 40px;
+	}
+/* ================================= 3.2.About Content
+============================================================= */
+	#about .about_content {
+		text-align: center;
+		padding-top: 30px;
+	}
+	#about .about_content a {
+		color: #666666;
+		font-size: 13px;
+	}
+	#about .about_content p {
+		font-size: 13px;
+	}
+/* =================================== 4.Works
+============================================================ */
+	#works{
+		padding: 60px 0px;
+	}
+/* ================================== 4.1.Works Header
+============================================================= */
+	#works .works_h2 h2 {
+		font-size: 18px;
+	}
+/* ===================== 4.2.Works Content (Isotope Plugin)
+============================================================ */
+	#works .isotope-menu {
+		padding: 30px 0;
+	}
+	#works .isotope-menu > span {
+		font-size: 12px;
+		display: block;
+		padding-top: 5px;
+		margin-right: 0;
+	}
+	#works .filter-area .filter-item .p_img {
+		margin: 0 auto;
+		width: 90%;
+		margin-bottom: 30px;
+	}
+	#works .filter-area .filter-item .p_img .filter-item-content h4 {
+		font-size: 15px;
+	}
+	#works .filter-area .filter-item .p_img .filter-item-content p {
+		font-size: 13px;
+	}
+	#works .filter-area .filter-item .p_img .filter-item-content img {
+		width: 95%;
+	}
+	#works .filter-area .filter-item .p_img img {
+		width: 100%;
+		height: auto;
+	}
+/* ================================= 4.3.Works Footer
+============================================================ */
+	#works .work-footer a {
+		font-size: 13px;
+	}
+/* ================================= 5.Features
+=========================================================== */
+	#features {
+		padding:60px 0px;
+	}
+/* ================================= 5.1.Features Header
+============================================================ */
+	#features .features_h2 h2 {
+		font-size: 18px;
+	}
+	#features .features_h2{
+		height:50px;
+	}
+/* =============================== 5.2.Features Content area
+============================================================= */
+	#features .features-content {
+		width: auto;
+		text-align: center;
+	}
+	#features .features-content .features-content-img img {
+		width: 90px;
+		height: 90px;
+	}
+	#features .features-content .features-content-text {
+		padding-left: 0px;
+		padding-top: 0px;
+	}
+	#features .features-content .features-content-text h2 {
+		font-size: 13.5px;
+		margin-top: 25px;
+	}
+	#features .features-content .features-content-text span {
+		font-size: 12px;
+	}
+	#features .features-content .features-content-text p {
+		font-size: 12.5px;
+		padding-right: 0px;
+	}
+/* ====================================6.Achivement
+========================================================== */
+	#achivement{
+		padding:60px 0px;
+	}
+/* ============================== 6.1.Achivement Text Area
+============================================================ */
+	#achivement .achivement-text {
+		margin-top: 0px;
+	}
+	#achivement .achivement-text h2 {
+		font-size: 20px;
+	}
+	#achivement .achivement-text p {
+		font-size: 13px;
+	}
+	#achivement .achivement-text .achivement-btn {
+		padding-top: 10px;
+	}
+	#achivement .achivement-text .achivement-btn a {
+		font-size: 14px;
+	}
+	#achivement img{
+		width: 90px;
+		height: 170px;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+/* ============================================7.Counter
+========================================================= */
+	#counter{
+		padding:60px 0px;
+	}
+/* =====================================7.1.Counter Body 
+============================================================ */
+	#counter .counter-content {
+		justify-content: center;
+	}
+	#counter .counter-content .counter-content-img1{
+		width: 40px;
+		height: 70px;
+		margin-left: -34px;
+	}
+	#counter .counter-content .counter-content-img2{
+		width: 42px;
+		height: 50px;
+		margin-top: 13px;
+	}
+	#counter .counter-content .counter-content-img3{
+		width: 40px;
+		height: 45px;
+		margin-top: 18px;
+		margin-left: 16px;
+	}
+	#counter .counter-content .counter-content-img4{
+		width: 40px;
+		height: 58px;
+		margin-top: 10px;
+	}
+	#counter .counter-content .counter-text span {
+		font-size: 18px;
+	}
+	#counter .counter-content .counter-text p {
+		font-size: 15px;
+	}
+/* ===================================8.Our Team
+================================================== */
+	#team{
+		padding:60px 0px;
+	}
+/* =====================================8.1.Our Team Header
+============================================================= */
+	#team .team_h2 h2 {
+		font-size: 18px;
+	}
+	#team .team_h2{
+		height:40px;
+	}
+	#team .team_p p {
+		font-size: 12.5px;
+	}
+/* ================================== 8.2.Our Team Content
+=========================================================== */
+	#team .team-content {
+		width: 80%;
+		margin: 0 auto;
+		margin-bottom: 50px;
+	}
+	#team .team-content .team-content-text h2 {
+		font-size: 13px;
+	}
+	#team .team-content .team-content-text p {
+		font-size: 12.5px;
+	}
+/* ====================================== 9.Video
+===================================================== */
+	.my-video-dimensions {
+		height: 40vh;
+	}
+/* =================================== 10.Our Skill
+========================================================== */
+#skill{
+	padding:60px 0px;
+}
+/* =================================== 10.1.Our Skill Header
+===========================================================	*/
+	#skill .skill_h2 h2 {
+		font-size: 18px;
+	}
+	#skill .skill_h2 {
+		height:40px;
+	}
+/* ================================= 10.2.Our Skill Content
+============================================================= */
+	#skill .skill-content {
+		width: 100%;
+		text-align: center;
+	}
+	#skill .skill-content .skill-content-text1 h2 {
+		font-size: 13px;
+	}
+	#skill .skill-content .skill-content-text1 span {
+		font-size: 12px;
+	}
+	#skill .skill-content .skill-content-text1 p {
+		font-size: 12.5px;
+	}
+/* ========================Our Skill Content Progress Bar
+============================================================ */
+	.skillbarcont {
+		justify-content: center;
+		padding-left: 10px;
+		height: 170px;
+		margin-top: 30px;
+	}
+	.skillbar {
+		margin-left: 5px;
+		width: 20px;
+	}
+	.filltip {
+		font-size: 12px;
+		top: calc(100% - 115px);
+		right: -92px;
+		text-align: left;
+	}
+/* =====================================11.Socail Platform
+===========================================================	*/
+	#socail-platform ul li:nth-child(1) {
+		background-size: 50% 50%;
+		width: 100%;
+		border-bottom: 1px solid #e1e1e1;
+	}
+	#socail-platform ul li:nth-child(2) {
+		background-size: 50% 50%;
+		width: 100%;
+		border-bottom: 1px solid #e1e1e1;
+	}
+	#socail-platform ul li:nth-child(3) {
+		background-size: 50% 50%;
+		width: 100%;
+		border-bottom: 1px solid #e1e1e1;
+	}
+	#socail-platform ul li:nth-child(4) {
+		background-size: 50% 50%;
+		width: 100%;
+		border-bottom: 1px solid #e1e1e1;
+	}
+	#socail-platform ul li:nth-child(5) {
+		background-size: 50% 50%;
+		width: 100%;
+		border-bottom: 1px solid #e1e1e1;
+	}
+	#socail-platform ul li:nth-child(6) {
+		background-size: 50% 50%;
+		width: 100%;
+	}
+	#socail-platform ul li {
+		width: 47px;
+		height: 56px;
+	}
+	#socail-platform ul {
+		height: 100%;
+		min-height: 270px;
+	}
+/* =====================================12.1.Slider Body
+============================================================ */
+	.swiper-slide {
+		min-height: 470px;
+	}
+	.swiper-slide .slide-content {
+		margin: 40px 0;
+	}
+	.swiper-slide .slide-content .slide-content-text-area {
+		max-width: 540px;
+		float: none;
+		margin: 0 auto;
+		margin-top: 20px;
+		height: 100%;
+		padding: 10px;
+	}
+	
+	.swiper-slide .slide-content .slide-content-text-area i {
+		font-size: 21px;
+		padding-right: 18px;
+	}
+	.swiper-slide .slide-content .slide-content-text-area .slide-content-text p {
+		font-size: 12.5px;
+		margin-bottom: 15px;
+	}
+	.swiper-slide .slide-content .slide-content-text-area .slide-content-text h5 {
+		font-size: 14px;
+	}
+	.swiper-slide .slide-content .slide-content-text-area .slide-content-text h6 {
+		font-size: 12px;
+	}
+	.swiper-slide .slide-content img {
+		width: 138px;
+		height: 183px;
+		position: relative;
+		left: 50%;
+		bottom: 0px;
+		top: 0px;
+		transform: translateX(-50%);
+	}
+/* ==================================== 13.Our News
+=========================================================*/
+	#news{
+		padding:60px 0px;
+	}
+/* ===================================== 13.1.Our News Header
+============================================================ */
+	#news .news_h2 h2 {
+		font-size: 18px;
+	}
+	#news .news_h2{
+		height:48px;
+	}
+	#news .news_p {
+		padding: 50px 14px;
+	}
+	#news .news_p p {
+		font-size: 12.5px;
+	}
+/* ==================================== 13.2.Our News Body
+============================================================= */
+	#news .new-wrapper {
+		width: 100%;
+		text-align: center;
+	}
+	#news .new-wrapper .news-content {
+		padding-bottom: 60px;
+	}
+	#news .new-wrapper .news-content .news-content-text .news-content-text-header {
+		background-position: bottom center;
+	}
+	#news .new-wrapper .news-content .news-content-text .news-content-text-header h2 {
+		font-size: 14px;
+		margin-top:15px;
+	}
+	#news .new-wrapper .news-content .news-content-text .news-content-text-header a {
+		font-size: 12px;
+	}
+	#news .new-wrapper .news-content .news-content-text .news-content-text-body p {
+		font-size: 12.5px;
+	}
+	#news .new-wrapper .news-content .news-content-text .news-content-text-body .news-content-text-body-link a {
+		font-size: 12px;
+	}
+/* ==================================== 13.3.Our News Footer
+============================================================= */
+	#news .new-wrapper .news-footer a {
+		font-size: 14px;
+	}
+/* ====================================== 14.Form
+===================================================== */
+	#form{
+		padding:60px 0px;
+	}
+/* ===================================== 14.Form	 
+=========================================================== */
+	#form .form-wrapper {
+		width: 100%;
+		margin: 0 auto;
+	}
+	#form .form-wrapper h2 {
+		font-size: 18px;
+	}
+	#form .form-wrapper form .form-group input {
+		padding: 7px 0px;
+	}
+	#form .form-wrapper form .form-group label {
+		font-size: 14px;
+	}
+	#form .form-wrapper form .form-group textarea {
+		padding: 7px 0px;
+	}
+	#form .form-wrapper form input[type="submit"] {
+		font-size: 14px;
+		margin-left: 45%;
+	}
+/* 15.Contact Us */
+	#contact{
+		padding:60px 0px;
+	}
+/* ================================ 15.1.Contact Us Header
+============================================================ */
+	#contact .contact-h2 h2 {
+		font-size: 18px;
+	}
+	#contact .contact-h2{
+		height:40px;
+	}
+	#contact p {
+		font-size: 12.5px;
+	}
+/* ================================= 15.2.Contact Us Body
+============================================================= */
+		
+	#contact .contact-wrapper .contact-text i {
+		font-size: 21px;
+	}
+	#contact .contact-wrapper .contact-text h5 {
+		font-size: 12.5px;
+	}
+/* =================================  16.1.Footer Header
+============================================================= */
+	#footer{
+		padding:60px 0;
+	}
+	#footer .footer-wrapper {
+		width: 100%;
+	}
+	#footer .footer-wrapper .footer-content {
+		
+	}
+	#footer .footer-wrapper .footer-content .footer-content-icon {
+		margin: 0 auto;
+		margin-top: 13px;
+	}
+	#footer .footer-wrapper .footer-h2 h2 {
+		font-size: 24px;
+	}
+	#footer .footer-wrapper .footer-h2 {
+		height: 80px;
+	}
+/* =================================== 16.2.Footer Body
+============================================================ */
+	#footer .footer-wrapper .footer-content {
+		/* justify-content: center; */
+	}
+	#footer .footer-wrapper .footer-content .footer-content-icon {
+		width: 20px;
+		height: 20px;
+		margin: 0px 3px;
+	}
+	#footer .footer-wrapper .footer-content .footer-content-icon i{
+		font-size:10px;
+	}
+/* =================================== 16.3.Footer Bottom
+=========================================================== */
+	#footer .footer-bottom span {
+		font-size: 13px;
+	}	
+}
+
+
+/* ==========================================================
+=================[ device-pixel-ratio of 2+ ]=================
+============================================================= */
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	
+	
+	
+}
